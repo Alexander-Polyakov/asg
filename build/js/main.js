@@ -1,4 +1,23 @@
 $(document).ready(function() {
+    $(".js-carousel-gallery").owlCarousel({
+        dots: false,
+        nav: false,
+        responsive:{
+            0:{
+                items: 1,
+                nav: true
+            },
+            500:{
+                items: 2,
+                nav: true
+            },
+            768:{
+                items: 3,
+                mouseDrag: false
+            }
+        }
+    });
+
     var sync1 = $(".js-full-slider");
     var sync2 = $(".js-carousel");
     var slidesPerPage = 4;

@@ -451,6 +451,16 @@ body
     position: relative
     padding-top: 57%
     display: block
+    overflow: hidden
+    transition: all 0.5s ease 0s
+    &_gallery
+        &:hover
+            box-shadow: 6px 6px 6px 0 #ababab
+            .image-proportional-box__image
+                width: 110%
+                height: 110%
+                left: -5%
+                top: -5%
     &_size_50
         padding-top: 50%
     &_size_76
@@ -463,6 +473,7 @@ body
         height: 100%
         object-fit: cover
         z-index: 10
+        transition: all 0.5s ease 0s
     &__line
         height: 7px
         width: 50px
@@ -475,6 +486,25 @@ body
         &_right
             bottom: 13px
             right: -8px
+
+
+.js-carousel-gallery
+    .owl-nav button.owl-next, .owl-nav button.owl-prev
+        font-size: 0
+        width: 26px
+        height: 26px
+        border-top: 4px solid $dark-green
+        border-left: 4px solid $dark-green
+        position: absolute
+        z-index: 10
+        left: 25px
+        top: 50%
+        margin-top: -13px
+        transform: rotate(-45deg)
+    .owl-nav button.owl-next
+        left: auto
+        transform: rotate(135deg)
+        right: 25px
 
 .st-line
     width: 66px
@@ -788,12 +818,8 @@ body
 
 
 .gallery-grid
-    display: flex
-    flex-wrap: wrap
-    margin: -20px -10px 0
     &__item
-        padding: 20px 10px 0
-        width: 33.3%
+        padding: 10px
 
 
 .text-image
