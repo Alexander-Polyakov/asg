@@ -1,0 +1,88 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Главная')
+        include pug/styles.pug
+
+    body
+        .page
+            include pug/components/header
+
+            main.page__main
+                .preview-section
+                    .preview-section__bg(style='background-image: url("./images/previews/preview1.jpg")')
+                    .container.preview-section__container
+                        .tiered-title
+                            span.tiered-title__line опыт.
+                            span.tiered-title__line доверие.
+                            span.tiered-title__line результат.
+
+                .advantages-section
+                    img(src='./images/icons/lines-right-icon.svg').advantages-section__lines-icon.advantages-section__lines-icon_left
+                    img(src='./images/icons/lines-right-icon.svg').advantages-section__lines-icon.advantages-section__lines-icon_right
+                    .container.container_width_1240
+                        .advantages-section__title
+                            h2.title.title_line-top.title_center.title_fz_45 Преимущества
+                        .advantages-section__infographics
+                            .infographic-grid
+                                .infographic-grid__item.infographic-grid-item
+                                    .infographic-grid-item__icon-box
+                                        img(src='./images/icons/infographic1.svg').infographic-grid-item__icon
+                                    .infographic-grid-item__content лет работы <br/> на рынке
+                                .infographic-grid__item.infographic-grid-item
+                                    .infographic-grid-item__icon-box
+                                        img(src='./images/icons/infographic2.svg').infographic-grid-item__icon
+                                    .infographic-grid-item__content построенных <br/> объектов
+                                .infographic-grid__item.infographic-grid-item
+                                    .infographic-grid-item__icon-box
+                                        img(src='./images/icons/infographic3.svg').infographic-grid-item__icon
+                                    .infographic-grid-item__content высокое качество монтажа
+                                .infographic-grid__item.infographic-grid-item
+                                    .infographic-grid-item__icon-box
+                                        img(src='./images/icons/infographic4.svg').infographic-grid-item__icon
+                                    .infographic-grid-item__content надежность и долговечность
+
+                        .text-image-descr
+                            .text-image-descr__image-box
+                                .image-proportional-box
+                                    .image-proportional-box__line.image-proportional-box__line_left
+                                    .image-proportional-box__line.image-proportional-box__line_right
+                                    img(src='./images/previews/preview2.jpg').image-proportional-box__image
+                            .text-image-descr__text-box
+                                p Совмещение многолетнего опыта, доверия заказчиков и постоянного стремления к оптимизации, гарантирует высокую безопасность технологических процессов и качество оборудования, обладающего высокой эффективностью, долговечностью и экономичностью.
+
+
+                .full-image-section.mobile-dn(style='background-image: url("./images/backgrounds/parallax-img1.jpg")')
+                    img(src='./images/icons/triangle2.svg').full-image-section__icon
+                    h2.full-image-section__title.title.title_line-bottom.title_fz_40.title_center Хорошо очищенное и безопасно хранимое зерно – это капитал, который приносит прибыль
+
+                .brands-section
+                    .container.container_width_700
+                        .brands-section__title
+                            h2.title.title_line-top.title_fz_40.title_center мы официальные представители
+                        .brands-grid
+                            .brands-grid__item
+                                img(src='./images/brands/brand1.jpg').brands-grid__image
+                            .brands-grid__item
+                                img(src='./images/brands/brand2.jpg').brands-grid__image
+                            .brands-grid__item
+                                img(src='./images/brands/brand3.jpg').brands-grid__image
+                            .brands-grid__item
+                                img(src='./images/brands/brand4.jpg').brands-grid__image
+                            .brands-grid__item
+                                img(src='./images/brands/brand5.jpg').brands-grid__image
+
+                .mobile-dn
+                    include pug/components/sectionMap
+
+
+            include pug/components/footer
+
+
+        include pug/scripts.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src='js/ymap.js')

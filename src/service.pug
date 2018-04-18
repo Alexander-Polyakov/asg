@@ -1,0 +1,68 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Главная')
+        include pug/styles.pug
+
+    body
+        .page
+            .page__header
+                include pug/components/header
+
+            main.page__main
+                .st-section.st-section_first
+                    .st-section__breadcrumbs
+                        .container
+                            nav.breadcrumbs
+                                a(href='#').breadcrumbs__item Главная
+                                span.breadcrumbs__item Сервисное обслуживание
+
+                    .container.container_width_1000
+                        .st-section__title
+                            .container.container_width_1000
+                                h1.title.title_line-top Сервисное обслуживание
+
+                        .st-section__section
+                            .st-section__title
+                                h3.title.title_section-title.title_line-top гарантийное и сервисное обслуживание
+                            img(src='./images/previews/preview7.png').content-full-image
+                            .text-image
+                                .text-image__image-box
+                                    .image-proportional-box.image-proportional-box_size_76
+                                        img(src='./images/previews/preview6.jpg').image-proportional-box__image
+                                .text-image__text-box
+                                    .gray-text-container
+                                        i.gray-text-container__top-line.st-line.st-line_width_50
+                                        i.gray-text-container__bottom-line.st-line.st-line_width_50
+                                        .st-text.st-text_list
+                                            p Значительное внимание компания  "ASG" уделяет организации сервисного обслуживания и налаживанию четкой системы обеспечения клиентов запасными частями.
+                                            p Компания «АSG» специализируется на полном комплексном сервисном обслуживании оборудования для хранения и переработки зерна. Мы ведем прямую работу с производителями оборудования и имеем в наличии современное оснащение для диагностики и проведения ТО.
+                                            p На складе всегда в наличии имеются расходные материалы и запасные части на  все ходовые позиции, составленные с учетом статистики и сезонности.
+                                            p Обеспечить быструю доставку и замену расходных и запасных частей – одна из первоочередных задач сервиса. Компания «АSG»  стремиться к максимально быстрой поставке и отгрузке Заказчикам всех необходимых материалов.
+
+                        .st-section__section
+                            .st-section__title
+                                h3.title.title_section-title.title_line-top индивидуальный подход к каждому клиенту!
+                            .text-image
+                                .text-image__image-box
+                                    .image-proportional-box.image-proportional-box_size_76
+                                        img(src='./images/previews/preview6.jpg').image-proportional-box__image
+                                .text-image__text-box
+                                    .gray-text-container
+                                        i.gray-text-container__top-line.st-line.st-line_width_50
+                                        i.gray-text-container__bottom-line.st-line.st-line_width_50
+                                        .st-text.st-text_list
+                                            p Важным аспектом работы компании является индивидуальный подход к каждому клиенту!
+                                            p Высокий профессионализм сотрудников нашей компании, крепкие партнерские отношения со всеми поставщиками, позволяют уверенно и планомерно двигаться к выполнению главной задачи – становлению крепкого и процветающего сельскохозяйственного производства России.
+
+
+            include pug/components/footer
+
+
+    include pug/scripts.pug
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+    script(src='js/ymap.js')

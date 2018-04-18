@@ -1,0 +1,75 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Главная')
+        include pug/styles.pug
+
+    body
+        .page
+            .page__header
+                include pug/components/header
+
+            main.page__main
+                .page-preview-section(style='background-image: url("./images/previews/preview3.jpg")')
+                    .page-preview-section__breadcrumbs
+                        .container
+                            nav.breadcrumbs
+                                a(href='#').breadcrumbs__item Главная
+                                span.breadcrumbs__item Реализованные проекты
+                    .container.container_width_1000
+                        h1.title.title_line-top О КОМПАНИИ
+
+
+                .st-section
+                    .st-section__section
+                        .container
+                            .st-section__title
+                                h3.title.title_section-title.title_line-top ООО «ASG» инжиниринговая компания, <br/> являющаяся дилерским и сервисным центром
+                            .text-image
+                                .text-image__image-box
+                                    .image-proportional-box.image-proportional-box_size_76
+                                        img(src='./images/previews/preview4.jpg').image-proportional-box__image
+                                .text-image__text-box
+                                    .gray-text-container
+                                        i.gray-text-container__top-line.st-line.st-line_width_50
+                                        i.gray-text-container__bottom-line.st-line.st-line_width_50
+                                        .st-text.st-text_list
+                                            p ООО «ASG» инжиниринговая компания, являющаяся дилерским и сервисным центром по поставке оборудования для  хранения и переработки зерна, ведущих европейских и отечественных производителей, таких как:  «DAMAS» (Дания),  «ARAJ» (Польша), «SHTRAHL» (Италия),  «ROMAX» (Россия), «СЕЛЬМАШСЕРВИС» (Россия).
+                                            p В сочетании с ведущими технологиями, практическими знаниями и опытом большой команды профессионалов, мы можем предложить полный спектр услуг и оборудования - от установок по зерноочистке,  до проектирования, строительства и ввода в эксплуатацию больших элеваторов, удовлетворяющих требованиям и пожеланиям наших Заказчиков.
+                    .st-section__section
+                        .container.container_width_950
+                            img(src='./images/previews/preview5.jpg').content-full-image
+                            .st-section__title
+                                h3.title.title_section-title.title_line-top выполнениЕ ВСЕХ РАБОТ «под ключ»
+                            .container.container_width_700
+                                .st-text
+                                    p Важный аспект сотрудничества – это доверие сторон друг другу. Именно данная характеристика позволила достичь выдающихся результатов при выполнении  взятых на себя обязательств: по поставке качественного оборудования,  соблюдению  сроков выполнения строительно-монтажных и пуско-наладочных работ, соответствию  заявленных характеристик оборудования – фактическим, тем самым заслужить доверие Заказчиков. Мы всегда стремимся к тому, чтобы сельскохозяйственные производители видели в нашем лице надежного партнера для реализации своих проектов.
+
+                    .st-section__section
+                        .container.container_width_1000
+                            .st-section__title
+                                h3.title.title_section-title.title_line-top опыт, доверие Заказчиков, гарантирует высокую <br/> безопасность и качество всех технологических процессов
+                            .text-image.text-image_rotated
+                                .text-image__text-box
+                                    .gray-text-container
+                                        i.gray-text-container__top-line.st-line.st-line_width_50
+                                        i.gray-text-container__bottom-line.st-line.st-line_width_50
+                                        .st-text.st-text_fz_18
+                                            p Совмещение многолетнего опыта, доверия Заказчиков и постоянного стремления к оптимизации, гарантирует высокую безопасность технологических процессов и качество оборудования, обладающего высокой эффективностью, долговечностью и экономичностью.
+                                .text-image__image-box
+                                    .image-proportional-box.image-proportional-box_size_76
+                                        img(src='./images/previews/preview6.jpg').image-proportional-box__image
+
+                .full-image-section.mobile-dn(style='background-image: url("./images/backgrounds/parallax-img1.jpg")')
+                    img(src='./images/icons/triangle2.svg').full-image-section__icon
+                    h2.full-image-section__title.title.title_line-bottom.title_fz_40.title_center Хорошо очищенное и безопасно хранимое зерно – это капитал, который приносит прибыль
+
+
+            include pug/components/footer
+
+
+        include pug/scripts.pug

@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+.git
+bower_components
+node_modules
+/.sass-cache
+psd

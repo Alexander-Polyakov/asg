@@ -1,0 +1,57 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Главная')
+        include pug/styles.pug
+
+    body
+        .page
+            .page__header
+                include pug/components/header
+
+            main.page__main
+                .st-section.st-section_first
+                    .st-section__breadcrumbs
+                        .container
+                            nav.breadcrumbs
+                                a(href='#').breadcrumbs__item Главная
+                                span.breadcrumbs__item Реализованные проекты
+
+                    .container.container_width_1000
+                        .st-section__title
+                            h1.title.title_line-top Реализованные проекты
+
+                        .st-section__section
+                            .image-proportional-box.image-proportional-box_size_50
+                                img(src='./images/previews/preview2.jpg').image-proportional-box__image
+                        .st-section__section
+                            .container.container_width_750
+                                .text-box
+                                    .text-box__date 20. 03. 2018
+                                    .text-box__title ООО «ASG» инжиниринговая компания, являющаяся дилерским и сервисным центром
+                                    .text-box__descr
+                                        .st-text
+                                            p Завод «ROMAX» - один из лидирующих заводов-производителей в России, специализирующийся на производстве силосов хранения, зерноочистительного, транспортного, сопутствующего оборудования, металлоконструкций и комплектующих материалов для зерноочистительных комплексов Завод «ROMAX» - один из лидирующих заводов-производителей в России, специализирующийся на производстве силосов хранения, зерноочистительного, транспортного, сопутствующего оборудования, металлоконструкций и комплектующих материалов для зерноочистительных комплексов Завод «ROMAX» - один из лидирующих заводов-производителей в России, специализирующийся на производстве силосов хранения, зерноочистительного, транспортного, сопутствующего оборудования, металлоконструкций и комплектующих материалов для зерноочистительных комплексов
+                                            p Завод «ROMAX» - один из лидирующих заводов-производителей в России, специализирующийся на производстве силосов хранения, зерноочистительного, транспортного, сопутствующего оборудования, металлоконструкций и комплектующих материалов для зерноочистительных комплексовЗавод «ROMAX» - один из лидирующих заводов-производителей в России, специализирующийся на производстве силосов хранения, зерноочистительного, транспортного, сопутствующего оборудования, металлоконструкций и комплектующих материалов для зерноочистительных комплексов
+
+                        .st-section__section
+                            .gallery-grid
+                                .gallery-grid__item
+                                    a(href='./images/previews/preview2.jpg' data-fancybox='gallery').image-proportional-box.image-proportional-box_size_76
+                                        img(src='./images/previews/preview2.jpg').image-proportional-box__image
+                                .gallery-grid__item
+                                    a(href='./images/previews/preview2.jpg' data-fancybox='gallery').image-proportional-box.image-proportional-box_size_76
+                                        img(src='./images/previews/preview2.jpg').image-proportional-box__image
+                                .gallery-grid__item
+                                    a(href='./images/previews/preview2.jpg' data-fancybox='gallery').image-proportional-box.image-proportional-box_size_76
+                                        img(src='./images/previews/preview2.jpg').image-proportional-box__image
+
+
+            include pug/components/footer
+
+
+        include pug/scripts.pug

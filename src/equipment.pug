@@ -1,0 +1,192 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Главная')
+        include pug/styles.pug
+
+    body
+        .page
+            .page__header
+                include pug/components/header
+
+            main.page__main
+                .st-section.st-section_first
+                    .st-section__breadcrumbs
+                        .container
+                            nav.breadcrumbs
+                                a(href='#').breadcrumbs__item Главная
+                                span.breadcrumbs__item Реализованные проекты
+
+                    .container
+                        .st-section__section.tablet-dn
+                            include pug/components/gridNav
+
+                        .st-section__section
+                            .st-section__title
+                                h1.title.title_line-top Ковшовый элеватор (нория)
+                            .st-text.st-text_fz_18
+                                p Ковшовые элеваторы (нории) предназначены для вертикального транспортирования зернового вороха зерновых, колосовых, зернобобовых, технических, масличных культур в элеваторах, комбикормовых заводах, семенных линиях, зерноперерабатывающих комплексах.
+                                p В ковшовых элеваторах используются червячные и осевые мотор-редукторы таких компаний как Bonfiglioli, Nord, Servo Drive, Sam yang guo mao, с сервис-фактором от 2,5 до 5. Ковши и ленты брендового французского производителя STIF.
+                                p
+                                    | Воплотив в транспортном оборудовании весь лучший мировой опыт конструкторских решений и используя современные технологии и материалы, мы поставляем высококачественное оборудование по оптимальной цене, производительностью
+                                    strong от 5 до 2000 м3
+
+
+                        .st-section__section
+                            .object-slider
+                                .object-slider__top
+                                    .object-slider__main-image
+                                        .full-slider.owl-carousel.owl-theme.js-full-slider
+                                            .full-slider__item
+                                                img(src='./images/previews/preview6.jpg').full-slider__image
+                                            .full-slider__item
+                                                img(src='./images/previews/preview6.jpg').full-slider__image
+                                            .full-slider__item
+                                                img(src='./images/previews/preview6.jpg').full-slider__image
+                                            .full-slider__item
+                                                img(src='./images/previews/preview6.jpg').full-slider__image
+                                            .full-slider__item
+                                                img(src='./images/previews/preview6.jpg').full-slider__image
+                                            .full-slider__item
+                                                img(src='./images/previews/preview6.jpg').full-slider__image
+                                    .object-slider__content
+                                        .slider-descr-box
+                                            .slider-descr-box__title КОНКУРЕНТНЫЕ ПРЕИМУЩЕСТВА
+                                            .slider-descr-box__infographic
+                                                .infographic-list
+                                                    .infographic-list__item
+                                                        .infographic-list-item
+                                                            img(src='./images/icons/menu-icon1.svg').infographic-list-item__icon
+                                                            .infographic-list-item__content - в зерносушилках применяются теплогенераторы только с теплообменником.
+                                                    .infographic-list__item
+                                                        .infographic-list-item
+                                                            img(src='./images/icons/menu-icon1.svg').infographic-list-item__icon
+                                                            .infographic-list-item__content - в зерносушилках применяются теплогенераторы только с теплообменником.
+                                                    .infographic-list__item
+                                                        .infographic-list-item
+                                                            img(src='./images/icons/menu-icon1.svg').infographic-list-item__icon
+                                                            .infographic-list-item__content - в зерносушилках применяются теплогенераторы только с теплообменником.
+                                                    .infographic-list__item
+                                                        .infographic-list-item
+                                                            img(src='./images/icons/menu-icon1.svg').infographic-list-item__icon
+                                                            .infographic-list-item__content - в зерносушилках применяются теплогенераторы только с теплообменником.
+                                                    .infographic-list__item
+                                                        .infographic-list-item
+                                                            img(src='./images/icons/menu-icon1.svg').infographic-list-item__icon
+                                                            .infographic-list-item__content - в зерносушилках применяются теплогенераторы только с теплообменником.
+                                                    .infographic-list__item
+                                                        .infographic-list-item
+                                                            img(src='./images/icons/menu-icon1.svg').infographic-list-item__icon
+                                                            .infographic-list-item__content - в зерносушилках применяются теплогенераторы только с теплообменником.
+                                            .slider-descr-box__button
+                                                a(href='#').button оставить заявку
+                                .object-slider__bottom
+                                    .carousel.owl-carousel.owl-theme.js-carousel
+                                        .carousel__item
+                                            img(src='./images/previews/preview6.jpg').carousel__image
+                                        .carousel__item
+                                            img(src='./images/previews/preview6.jpg').carousel__image
+                                        .carousel__item
+                                            img(src='./images/previews/preview6.jpg').carousel__image
+                                        .carousel__item
+                                            img(src='./images/previews/preview6.jpg').carousel__image
+                                        .carousel__item
+                                            img(src='./images/previews/preview6.jpg').carousel__image
+                                        .carousel__item
+                                            img(src='./images/previews/preview6.jpg').carousel__image
+
+
+                        .st-section__section
+                            .numbered-scheme
+                                .numbered-scheme__image-box
+                                    img(src='./images/images/scheme1.jpg').numbered-scheme__image
+                                .numbered-scheme__content
+                                    .numbered-scheme__title
+                                        .title.title_line-top.title_fz_28 Стандартная комплектация ковшового элеватора:
+                                    ol.numbered-list.numbered-scheme__list
+                                        li.numbered-list__li Верхняя голова ковшового элеватора
+                                        li.numbered-list__li Мотор-редуктор;
+                                        li.numbered-list__li Выгрузка;
+                                        li.numbered-list__li Шахта нории
+                                        li.numbered-list__li Нижний башмак ковшового элеватора
+                                        li.numbered-list__li Засыпной лоток;
+                                        li.numbered-list__li Натяжная шпилька;
+                                        li.numbered-list__li Ковши нории;
+                                        li.numbered-list__li Лента нории;
+                                        li.numbered-list__li  Люк для очистки;
+                                        li.numbered-list__li  Люк обслуживания;
+                                        li.numbered-list__li  Взрыворазрядное устройство
+                                        li.numbered-list__li  Датчик подпора
+                                        li.numbered-list__li  Датчик схода ленты
+                                        li.numbered-list__li  Датчик скорости
+                                        li.numbered-list__li  Тормозное устройство
+                                        li.numbered-list__li  Полимерная пластиной h= 10 мм. в приемном лотке, крышке верхней головки и высыпке.
+
+                        .st-section__section
+                            .st-section__title
+                                .title.title_line-top.title_fz_28 ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ КОВШОВЫХ ЭЛЕВАТОРОВ
+
+                            .table-section
+                                .table-section__table
+                                    .table
+                                        .table__tr
+                                            .table__th Тип
+                                            .table__th A
+                                            .table__th B
+                                            .table__th C
+                                            .table__th D
+                                            .table__th E
+                                            .table__th F
+                                            .table__th G
+                                            .table__th H
+                                            .table__th I
+                                            .table__th J
+                                            .table__th K
+                                            .table__th L
+                                            .table__th M
+                                            .table__th Произв. т/ч
+                                        .table__tr
+                                            .table__td E80
+                                            .table__td 130
+                                            .table__td 600
+                                            .table__td Ø30
+                                            .table__td Ø40
+                                            .table__td 135
+                                            .table__td 428
+                                            .table__td 500
+                                            .table__td -
+                                            .table__td 440
+                                            .table__td Ø160
+                                            .table__td 220
+                                            .table__td 130
+                                            .table__td 220
+                                            .table__td 5-15
+                                        .table__tr
+                                            .table__td E80
+                                            .table__td 130
+                                            .table__td 600
+                                            .table__td Ø30
+                                            .table__td Ø40
+                                            .table__td 135
+                                            .table__td 428
+                                            .table__td 500
+                                            .table__td -
+                                            .table__td 440
+                                            .table__td Ø160
+                                            .table__td 220
+                                            .table__td 130
+                                            .table__td 220
+                                            .table__td 5-15
+
+                                a(href='#').table-section__link Декларация о соответствии
+
+
+
+include pug/components/footer
+
+
+        include pug/scripts.pug

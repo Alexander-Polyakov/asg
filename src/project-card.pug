@@ -1,0 +1,141 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Главная')
+        include pug/styles.pug
+
+    body
+        .page
+            .page__header
+                include pug/components/header
+
+            main.page__main
+                .st-section.st-section_first
+                    .container
+                        .st-section__breadcrumbs
+                            nav.breadcrumbs
+                                a(href='#').breadcrumbs__item Главная
+                                span.breadcrumbs__item Реализованные проекты
+                        .st-section__title
+                            h1.title Реализованные проекты
+                        .st-section__section
+                            .object-full
+                                .object-full__preview-box
+                                    img(src='./images/previews/preview6.jpg').object-full__preview-image
+                                    .object-full__preview-content
+                                        .object-descr
+                                            h1.object-descr__title АО  «КОРОТОЯКСКИЙ <br/> ЭЛЕВАТОР»
+                                            .object-descr__descr Входит в состав Агрохолдинга «ГРАНА» <br/> Алтайский край, Хабарский р-н, п. Целинный
+                                            .object-descr__descr2 Комплекс приемки, очистки, сушки и хранения зерна вместимостью 24 847 куб.м. с привязкой к существующей мельнице.
+
+
+                                .object-full__descr-box
+                                    .object-descr-grid
+                                        .object-descr-grid__short
+                                            .object-descr-grid__short-text
+                                                .object-descr-grid__title
+                                                    p.text-fz-22.ttu год строительства
+                                                .object-descr-grid__year 2016 г.
+                                                .st-list-box
+                                                    .st-list-box__title
+                                                        p.text-fz-22.ttu ВИДЫ РАБОТ:
+                                                    .st-list-box__content
+                                                        ul.st-list
+                                                            li.st-list__li Инжиниринг
+                                                            li.st-list__li Комплектация оборудованием
+                                                            li.st-list__li Сопровождение строительно монтажных работ
+                                            a(href='#').button.button_arrow все объекты
+
+                                        .object-descr-grid__full
+                                            .st-list-box
+                                                .st-list-box__title
+                                                    p.title.title_line-top.title_fz_28 В СОСТАВ КОМПЛЕКСА ВХОДИТ:
+                                                .st-list-box__content
+                                                    ul.st-list
+                                                        li.st-list__li Линия приемки зерна, производительностью - 100т/ч.
+                                                        li.st-list__li Транспортные линии, производительностью - 100 т/ч.
+                                                        li.st-list__li Линия очистки зерна, производительностью - 100т/ч.
+                                                        li.st-list__li Линия сушки зерна, производительностью - 75т/ч.
+                                                        li.st-list__li Линия временного хранения зерна, объемом - 2 329 куб.м.
+                                                        li.st-list__li Линия длительного хранения зерна, объемом - 20 868 куб.м.
+                                                        li.st-list__li Линия формирования помольной партии зерна, объемом - 1 650 куб.м.
+                                                        li.st-list__li Линия отгрузки помольной партии зерна на мельницу, производительностью - 50т/ч.
+                                                        li.st-list__li Автоматизированная система управления комплексом.
+                        .st-section__section
+                            .projects-grid
+                                .projects-grid__item
+                                    a(href='./images/previews/preview2.jpg' data-fancybox="gallery").project-item.project-item_link
+                                        .project-item__img-box
+                                            .image-proportional-box.image-proportional-box_size_76
+                                                img(src='./images/previews/preview2.jpg').image-proportional-box__image
+                                        .project-item__footer
+                                            .project-item__name АО «Коротоякский <br/> элеватор» 2016 г.
+                                .projects-grid__item
+                                    a(href='./images/previews/preview2.jpg' data-fancybox="gallery").project-item.project-item_link
+                                        .project-item__img-box
+                                            .image-proportional-box.image-proportional-box_size_76
+                                                img(src='./images/previews/preview2.jpg').image-proportional-box__image
+                                        .project-item__footer
+                                            .project-item__name АО «Коротоякский элеватор» 2016 г.
+                                .projects-grid__item
+                                    a(href='./images/previews/preview2.jpg' data-fancybox="gallery").project-item.project-item_link
+                                        .project-item__img-box
+                                            .image-proportional-box.image-proportional-box_size_76
+                                                img(src='./images/previews/preview2.jpg').image-proportional-box__image
+                                        .project-item__footer
+                                            .project-item__name АО «Коротоякский элеватор» 2016 г.
+                                .projects-grid__item
+                                    a(href='./images/previews/preview2.jpg' data-fancybox="gallery").project-item.project-item_link
+                                        .project-item__img-box
+                                            .image-proportional-box.image-proportional-box_size_76
+                                                img(src='./images/previews/preview2.jpg').image-proportional-box__image
+                                        .project-item__footer
+                                            .project-item__name АО «Коротоякский элеватор» 2016 г.
+
+                                .projects-grid__item
+                                    a(href='./images/previews/preview2.jpg' data-fancybox="gallery").project-item.project-item_link
+                                        .project-item__img-box
+                                            .image-proportional-box.image-proportional-box_size_76
+                                                img(src='./images/previews/preview2.jpg').image-proportional-box__image
+                                        .project-item__footer
+                                            .project-item__name АО «Коротоякский элеватор» 2016 г.
+                                .projects-grid__item
+                                    a(href='./images/previews/preview2.jpg' data-fancybox="gallery").project-item.project-item_link
+                                        .project-item__img-box
+                                            .image-proportional-box.image-proportional-box_size_76
+                                                img(src='./images/previews/preview2.jpg').image-proportional-box__image
+                                        .project-item__footer
+                                            .project-item__name АО «Коротоякский элеватор» 2016 г.
+
+                        .st-section__section
+                            .project-nav-grid
+                                .project-nav-grid__item
+                                    a(href='#').project-nav-item
+                                        .project-nav-item__arrow
+                                        .project-nav-item__content
+                                            img(src='./images/previews/preview2.jpg').project-nav-item__preview
+                                            .project-nav-item__text
+                                                .project-nav-item__title предующий проект
+                                                .project-nav-item__name ЗАО «агрохолдинг Юбилейный»
+                                .project-nav-grid__item
+                                    a(href='#').project-nav-item.project-nav-item_next
+                                        .project-nav-item__arrow.project-nav-item__arrow_right
+                                        .project-nav-item__content
+                                            .project-nav-item__text
+                                                .project-nav-item__title следующий проект
+                                                .project-nav-item__name ЗАО «агрохолдинг Юбилейный»
+                                            img(src='./images/previews/preview2.jpg').project-nav-item__preview
+
+
+                include pug/components/sectionMap
+
+
+            include pug/components/footer
+
+        include pug/scripts.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src='js/ymap.js')

@@ -1,0 +1,123 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Главная')
+        include pug/styles.pug
+
+    body
+        .page
+            .page__header
+                include pug/components/header
+
+            main.page__main
+                .st-section.st-section_first
+                    .st-section__breadcrumbs
+                        .container
+                            nav.breadcrumbs
+                                a(href='#').breadcrumbs__item Главная
+                                span.breadcrumbs__item Запасные части
+
+                    .container.container_width_1000
+                        .st-section__title
+                            .container.container_width_1000
+                                h1.title.title_line-top Запасные части
+
+                        .st-section__section
+                            .st-section__title
+                                h3.title.title_section-title.title_line-top Широкий ассортимент запасных частей <br/> всегда в наличии на складах компании
+                            .text-image
+                                .text-image__image-box
+                                    .image-proportional-box.image-proportional-box_size_76
+                                        img(src='./images/previews/preview4.jpg').image-proportional-box__image
+                                .text-image__text-box
+                                    .gray-text-container
+                                        i.gray-text-container__top-line.st-line.st-line_width_50
+                                        i.gray-text-container__bottom-line.st-line.st-line_width_50
+                                        .st-text.st-text_list
+                                            p Широкий ассортимент запасных частей есть всегда в наличии на складах компании, а так же у наших партнеров. Большое количество запасных частей и комплектующих к поставляемому оборудованию и технике, готовы для отправки в день заказа.
+                                            p Наша ответственность за поставленное оборудование, дает нам возможность сохранять, поддерживать и развивать на взаимовыгодных условиях для каждой из сторон, добропорядочные и устойчивые отношения.
+                        .st-section__section
+                            .gallery-grid
+                                .gallery-grid__item
+                                    a(href='./images/previews/preview2.jpg' data-fancybox='gallery').image-proportional-box.image-proportional-box_size_76
+                                        img(src='./images/previews/preview2.jpg').image-proportional-box__image
+                                .gallery-grid__item
+                                    a(href='./images/previews/preview2.jpg' data-fancybox='gallery').image-proportional-box.image-proportional-box_size_76
+                                        img(src='./images/previews/preview2.jpg').image-proportional-box__image
+                                .gallery-grid__item
+                                    a(href='./images/previews/preview2.jpg' data-fancybox='gallery').image-proportional-box.image-proportional-box_size_76
+                                        img(src='./images/previews/preview2.jpg').image-proportional-box__image
+                        .st-section__section
+                            .list-boxes
+                                .list-boxes__item
+                                    .list-boxes-item
+                                        .list-boxes-item__preview-box
+                                            .list-boxes-item__icon-circle
+                                                img(src='./images/icons/menu-icon8.svg').list-boxes-item__icon
+                                        .list-boxes-item__content-box
+                                            .list-boxes-item__title
+                                                h2.title.title_line-top Федеральная программа <br/> субсидирования 1432
+                                            .list-boxes-item__descr
+                                                .st-text.st-text_list
+                                                    p Совмещение многолетнего опыта, доверия заказчиков и постоянного стремления к оптимизации, гарантирует высокую безопасность технологических процессов и качество оборудования, обладающего высокой эффективностью, долговечностью. Совмещение многолетнего опыта, доверия заказчиков и постоянного стремления к оптимизации, гарантирует высокую безопасность технологических процессов и качество оборудования, обладающего высокой эффективностью, долговечностью.
+                                            a(href='#').button оставить заявку
+
+                                .list-boxes__item
+                                    .list-boxes-item
+                                        .list-boxes-item__preview-box
+                                            .list-boxes-item__icon-circle
+                                                img(src='./images/icons/service-icon1.svg').list-boxes-item__icon
+                                        .list-boxes-item__content-box
+                                            .list-boxes-item__title
+                                                h2.title.title_line-top Федеральная программа <br/> субсидирования 1432
+                                            .list-boxes-item__descr
+                                                .st-text.st-text_list
+                                                    p Совмещение многолетнего опыта, доверия заказчиков и постоянного стремления к оптимизации, гарантирует высокую безопасность технологических процессов и качество оборудования, обладающего высокой эффективностью, долговечностью. Совмещение многолетнего опыта, доверия заказчиков и постоянного стремления к оптимизации, гарантирует высокую безопасность технологических процессов и качество оборудования, обладающего высокой эффективностью, долговечностью.
+                                            a(href='#').button оставить заявку
+
+                                .list-boxes__item
+                                    .list-boxes-item
+                                        .list-boxes-item__preview-box
+                                            .list-boxes-item__icon-circle
+                                                img(src='./images/icons/service-icon2.svg').list-boxes-item__icon
+                                        .list-boxes-item__content-box
+                                            .list-boxes-item__title
+                                                h2.title.title_line-top Федеральная программа <br/> субсидирования 1432
+                                            .list-boxes-item__descr
+                                                .st-text.st-text_list
+                                                    p Совмещение многолетнего опыта, доверия заказчиков и постоянного стремления к оптимизации, гарантирует высокую безопасность технологических процессов и качество оборудования, обладающего высокой эффективностью, долговечностью. Совмещение многолетнего опыта, доверия заказчиков и постоянного стремления к оптимизации, гарантирует высокую безопасность технологических процессов и качество оборудования, обладающего высокой эффективностью, долговечностью.
+                                            a(href='#').button оставить заявку
+
+                                .list-boxes__item
+                                    .list-boxes-item
+                                        .list-boxes-item__preview-box
+                                            .list-boxes-item__icon-circle
+                                                img(src='./images/icons/service-icon3.svg').list-boxes-item__icon
+                                        .list-boxes-item__content-box
+                                            .list-boxes-item__title
+                                                h2.title.title_line-top Федеральная программа субсидирования 1432
+                                            .st-text.st-text_list
+                                                p Совмещение многолетнего опыта, доверия заказчиков и постоянного стремления к оптимизации, гарантирует высокую безопасность технологических процессов и качество оборудования, обладающего высокой эффективностью, долговечностью. Совмещение многолетнего опыта, доверия заказчиков и постоянного стремления к оптимизации, гарантирует высокую безопасность технологических процессов и качество оборудования, обладающего высокой эффективностью, долговечностью.
+
+                                .list-boxes__item
+                                    .list-boxes-item
+                                        .list-boxes-item__preview-box
+                                            .list-boxes-item__icon-circle
+                                                img(src='./images/icons/service-icon4.svg').list-boxes-item__icon
+                                        .list-boxes-item__content-box
+                                            .list-boxes-item__title
+                                                h2.title.title_line-top Федеральная программа субсидирования 1432
+                                            .st-text.st-text_list
+                                                p Совмещение многолетнего опыта, доверия заказчиков и постоянного стремления к оптимизации, гарантирует высокую безопасность технологических процессов и качество оборудования, обладающего высокой эффективностью, долговечностью. Совмещение многолетнего опыта, доверия заказчиков и постоянного стремления к оптимизации, гарантирует высокую безопасность технологических процессов и качество оборудования, обладающего высокой эффективностью, долговечностью.
+
+
+            include pug/components/footer
+
+
+    include pug/scripts.pug
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+    script(src='js/ymap.js')

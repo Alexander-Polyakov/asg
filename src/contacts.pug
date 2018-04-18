@@ -1,0 +1,52 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Главная')
+        include pug/styles.pug
+
+    body
+        .page
+            .page__header
+                include pug/components/header
+
+            main.page__main
+                .st-section.st-section_first
+                    .st-section__breadcrumbs
+                        .container
+                            nav.breadcrumbs
+                                a(href='#').breadcrumbs__item Главная
+                                span.breadcrumbs__item Контакты
+
+                    .container.container_width_1000
+                        .st-section__title
+                            h1.title.title_line-top Контакты
+                        .text-image
+                            .text-image__image-box
+                                .image-proportional-box.image-proportional-box_size_76
+                                    img(src='./images/previews/preview4.jpg').image-proportional-box__image
+                            .text-image__text-box
+                                .gray-text-container
+                                    i.gray-text-container__top-line.st-line.st-line_width_50
+                                    i.gray-text-container__bottom-line.st-line.st-line_width_50
+                                    .contacts-box
+                                        .contacts-box__line
+                                            .st-text.st-text_list
+                                                p 394016, г. Воронеж, ул. Хользунова, д.107.
+                                        .contacts-box__line
+                                            p
+                                                a(href='tel:8-930-414-79-38').contacts-box__phone +7(473) 333-57-27
+                                            p
+                                                a(href='tel:8-930-414-79-38').contacts-box__phone 8-930-414-79-38
+                                        .contacts-box__line
+                                            p
+                                                a(href='mailto:ivonin_asg@bk.ru').contacts-box__mail ivonin_asg@bk.ru
+
+            include pug/components/footer
+
+
+        include pug/scripts.pug
+

@@ -1,0 +1,73 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Главная')
+        include pug/styles.pug
+
+    body
+        .page
+            .page__header
+                include pug/components/header
+
+            main.page__main
+                .st-section.st-section_first
+                    .st-section__breadcrumbs
+                        .container
+                            nav.breadcrumbs
+                                a(href='#').breadcrumbs__item Главная
+                                span.breadcrumbs__item Финансирование
+                    .st-section__title
+                        .container.container_width_1000
+                            h1.title.title_line-top Финансирование
+
+                    .container
+                        .list-boxes
+                            .list-boxes__item
+                                .list-boxes-item
+                                    .list-boxes-item__preview-box
+                                        .list-boxes-item__icon-circle
+                                            img(src='./images/financing/financing1.jpg').list-boxes-item__icon
+                                    .list-boxes-item__content-box
+                                        .list-boxes-item__title
+                                            h2.title.title_line-top Федеральная программа <br/> субсидирования 1432
+                                        .st-text.st-text_list
+                                            p Совмещение многолетнего опыта, доверия заказчиков и постоянного стремления к оптимизации, гарантирует высокую безопасность технологических процессов и качество оборудования, обладающего высокой эффективностью, долговечностью. Совмещение многолетнего опыта, доверия заказчиков и постоянного стремления к оптимизации, гарантирует высокую безопасность технологических процессов и качество оборудования, обладающего высокой эффективностью, долговечностью.
+
+                            .list-boxes__item
+                                .list-boxes-item
+                                    .list-boxes-item__preview-box
+                                        .list-boxes-item__icon-circle
+                                            img(src='./images/financing/financing2.jpg').list-boxes-item__icon
+                                    .list-boxes-item__content-box
+                                        .list-boxes-item__title
+                                            h2.title.title_line-top Федеральная программа субсидирования 1432
+                                        .st-text.st-text_list
+                                            p Совмещение многолетнего опыта, доверия заказчиков и постоянного стремления к оптимизации, гарантирует высокую безопасность технологических процессов и качество оборудования, обладающего высокой эффективностью, долговечностью. Совмещение многолетнего опыта, доверия заказчиков и постоянного стремления к оптимизации, гарантирует высокую безопасность технологических процессов и качество оборудования, обладающего высокой эффективностью, долговечностью.
+
+                            .list-boxes__item
+                                .list-boxes-item
+                                    .list-boxes-item__preview-box
+                                        .list-boxes-item__icon-circle
+                                            img(src='./images/financing/financing3.jpg').list-boxes-item__icon
+                                    .list-boxes-item__content-box
+                                        .list-boxes-item__title
+                                            h2.title.title_line-top Федеральная программа субсидирования 1432
+                                        .st-text.st-text_list
+                                            p Совмещение многолетнего опыта, доверия заказчиков и постоянного стремления к оптимизации, гарантирует высокую безопасность технологических процессов и качество оборудования, обладающего высокой эффективностью, долговечностью. Совмещение многолетнего опыта, доверия заказчиков и постоянного стремления к оптимизации, гарантирует высокую безопасность технологических процессов и качество оборудования, обладающего высокой эффективностью, долговечностью.
+
+
+
+
+
+
+
+            include pug/components/footer
+
+
+    include pug/scripts.pug
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+    script(src='js/ymap.js')

@@ -1,0 +1,85 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Главная')
+        include pug/styles.pug
+
+    body
+        .page
+            .page__header
+                include pug/components/header
+
+            main.page__main
+                .st-section.st-section_first
+                    .st-section__breadcrumbs
+                        .container
+                            nav.breadcrumbs
+                                a(href='#').breadcrumbs__item Главная
+                                span.breadcrumbs__item Реализованные проекты
+                    .st-section__title
+                        .container.container_width_1000
+                            h1.title.title_line-top Партнёры
+
+                    .container
+                        .partners-grid
+                            .partners-grid__item
+                                .partners-item
+                                    img(src='./images/brands/brand1.jpg').partners-item__preview
+                                    .partners-item__title
+                                        h2.title.title_line-top Завод «ROMAX»
+                                    .partners-item__descr
+                                        .st-text.st-text_list
+                                            p Завод «ROMAX» - один из лидирующих заводов-производителей в России, специализирующийся на производстве силосов хранения, зерноочистительного, транспортного, сопутствующего оборудования, металлоконструкций и комплектующих материалов для зерноочистительных комплексов
+
+                            .partners-grid__item
+                                .partners-item
+                                    img(src='./images/brands/brand2.jpg').partners-item__preview
+                                    .partners-item__title
+                                        h2.title.title_line-top «СЕЛЬМАШСЕРВИС»
+                                    .partners-item__descr
+                                        .st-text.st-text_list
+                                            p «СЕЛЬМАШСЕРВИС» - Ин жиниринговая компания, имеющая огромный опыт в проектировании и строительстве объектов  любой сложности, для хранения и переработки зерна.
+
+                            .partners-grid__item
+                                .partners-item
+                                    img(src='./images/brands/brand3.jpg').partners-item__preview
+                                    .partners-item__title
+                                        h2.title.title_line-top «ARAJ»
+                                    .partners-item__descr
+                                        .st-text.st-text_list
+                                            p «ARAJ» - Польская компания дольше всех успешно работающая в отрасли сушильно-складских объектов на Польском рынке.  Специализируется на производстве силосов хранения, зерносушильного, транспортного и зерноочистительного оборудования. 
+
+
+                            .partners-grid__item
+                                .partners-item
+                                    img(src='./images/brands/brand4.jpg').partners-item__preview
+                                    .partners-item__title
+                                        h2.title.title_line-top «DAMAS»
+                                    .partners-item__descr
+                                        .st-text.st-text_list
+                                            p «DAMAS»  - Датская компания основанная в 1863г. по производству одних из лучших зерноочистительных и зерноперерабатывающих машин, зарекомендовавших себя по всему миру. Компания  DAMAS  входит в группу компаний SKOLD и осуществляет международную деятельность.
+
+                            .partners-grid__item
+                                .partners-item
+                                    img(src='./images/brands/brand5.jpg').partners-item__preview
+                                    .partners-item__title
+                                        h2.title.title_line-top «STRAHL»
+                                    .partners-item__descr
+                                        .st-text.st-text_list
+                                            p «STRAHL» - Итальянская компания основанная в 1952г. и являющаяся в настоящее время флагманом в Европе по производству высокопроизводительного зерносушильного оборудования премиум класса.
+
+
+
+
+
+
+include pug/components/footer
+
+
+        include pug/scripts.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src='js/ymap.js')

@@ -1,0 +1,85 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Главная')
+        include pug/styles.pug
+
+    body
+        .page
+            .page__header
+                include pug/components/header
+
+            main.page__main
+                .page__breadcrumbs
+                    .container
+
+
+                .st-section.st-section_first
+                    .container
+                        .st-section__breadcrumbs
+                            nav.breadcrumbs
+                                a(href='#').breadcrumbs__item Главная
+                                span.breadcrumbs__item Реализованные проекты
+
+                        .st-section__title
+                            h1.title Реализованные проекты
+
+                        .projects-grid
+                            .projects-grid__item
+                                a(href='#').project-item.project-item_link
+                                    .project-item__img-box
+                                        .image-proportional-box.image-proportional-box_size_76
+                                            img(src='./images/previews/preview2.jpg').image-proportional-box__image
+                                    .project-item__footer
+                                        .project-item__title АО «Коротоякский элеватор» 2016 г.
+                            .projects-grid__item
+                                a(href='#').project-item.project-item_link
+                                    .project-item__img-box
+                                        .image-proportional-box.image-proportional-box_size_76
+                                            img(src='./images/previews/preview2.jpg').image-proportional-box__image
+                                    .project-item__footer
+                                        .project-item__title АО «Коротоякский элеватор» 2016 г.
+                            .projects-grid__item
+                                a(href='#').project-item.project-item_link
+                                    .project-item__img-box
+                                        .image-proportional-box.image-proportional-box_size_76
+                                            img(src='./images/previews/preview2.jpg').image-proportional-box__image
+                                    .project-item__footer
+                                        .project-item__title АО «Коротоякский элеватор» 2016 г.
+                            .projects-grid__item
+                                a(href='#').project-item.project-item_link
+                                    .project-item__img-box
+                                        .image-proportional-box.image-proportional-box_size_76
+                                            img(src='./images/previews/preview2.jpg').image-proportional-box__image
+                                    .project-item__footer
+                                        .project-item__title АО «Коротоякский элеватор» 2016 г.
+
+                            .projects-grid__item
+                                a(href='#').project-item.project-item_link
+                                    .project-item__img-box
+                                        .image-proportional-box.image-proportional-box_size_76
+                                            img(src='./images/previews/preview2.jpg').image-proportional-box__image
+                                    .project-item__footer
+                                        .project-item__title АО «Коротоякский элеватор» 2016 г.
+                            .projects-grid__item
+                                a(href='#').project-item.project-item_link
+                                    .project-item__img-box
+                                        .image-proportional-box.image-proportional-box_size_76
+                                            img(src='./images/previews/preview2.jpg').image-proportional-box__image
+                                    .project-item__footer
+                                        .project-item__title АО «Коротоякский элеватор» 2016 г.
+
+                include pug/components/sectionMap
+
+
+
+            include pug/components/footer
+
+
+        include pug/scripts.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src='js/ymap.js')
