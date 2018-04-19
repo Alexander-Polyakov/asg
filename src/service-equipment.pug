@@ -1,0 +1,81 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Главная')
+        include pug/styles.pug
+
+    body
+        .page
+            .page__header
+                include pug/components/header
+
+            main.page__main
+                .st-section.st-section_first
+                    .st-section__breadcrumbs
+                        .container
+                            nav.breadcrumbs
+                                a(href='#').breadcrumbs__item Главная
+                                span.breadcrumbs__item Запасные части
+
+                    .container.container_width_1000
+                        .st-section__title
+                            .container
+                                h1.title.title_line-top Проектирование
+
+                        .st-section__section
+                            .container.container_width_750
+                                .st-section__title
+                                    h3.title.title_section-title.title_line-top правильный подбор Оборудования залог <br/> качества хранения зерна
+                                .st-text
+                                    p  Задачу комплектации оборудованием объекта, следует доверять компании, обладающей необходимым опытом и уровнем знаний, имеющей собственные практические наработки и успешно реализованные проекты.
+                                    p Оборудование для хранения и переработки зерна — особая статья расходов, к которой нужно подходить максимально внимательно. Выбор оборудования обуславливает качество хранимого зерна и произведенной из него продукции. Производительность оборудования целиком и полностью влияет на количество зерна, которое может быть обработано в единицу времени. Особое внимание нужно уделить производителю оборудования, его сервисным условиям и возможности проведения оперативного ремонта в случае поломки. Все эти вопросы с успехом решает компания «ASG». Мы берем на себя обязанности по подбору и доставке всего перечня оборудования и материалов.
+
+                        .st-section__section
+                            img(src='./images/preview-full/equipment-img1.jpg').content-full-image
+
+                        .st-section__section
+                            .images-grid
+                                .images-grid__item
+                                    img(src='./images/static/equipment-img1.jpg').images-grid__image
+                                .images-grid__item
+                                    img(src='./images/static/equipment-img2.jpg').images-grid__image
+                                .images-grid__item
+                                    img(src='./images/static/equipment-img3.jpg').images-grid__image
+                                .images-grid__item
+                                    img(src='./images/static/equipment-img4.jpg').images-grid__image
+                                .images-grid__item
+                                    img(src='./images/static/equipment-img5.jpg').images-grid__image
+                                .images-grid__item
+                                    img(src='./images/static/equipment-img6.jpg').images-grid__image
+                                .images-grid__item.images-grid__item_w50
+                                    img(src='./images/static/equipment-img7.jpg').images-grid__image
+                                .images-grid__item.images-grid__item_w50
+                                    img(src='./images/static/equipment-img8.jpg').images-grid__image
+                                .images-grid__item
+                                    img(src='./images/static/equipment-img9.jpg').images-grid__image
+                                .images-grid__item
+                                    img(src='./images/static/equipment-img10.jpg').images-grid__image
+                                .images-grid__item
+                                    img(src='./images/static/equipment-img11.jpg').images-grid__image
+
+
+                        .st-section__section
+                            .double-images
+                                .double-images__small-box
+                                    .double-images__small-title
+                                        p.title.title_section-title.title_line-top на основе подбора оборудование делается <br/> 3D проектирование объекта
+                                    img(src='./images/preview-full/equipment-img2.jpg').double-images__small-image
+                                .double-images__big-box
+                                    img(src='./images/preview-full/equipment-img3.jpg').double-images__big-image
+                                    .double-images__big-title
+                                        p.title.title_section-title.title_line-bottom на основе подбора оборудование делается <br/> 3D проектирование объекта
+
+
+            include pug/components/footer
+
+
+    include pug/scripts.pug

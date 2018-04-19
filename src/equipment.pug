@@ -14,17 +14,25 @@ html
                 include pug/components/header
 
             main.page__main
-                .st-section.st-section_first
-                    .st-section__breadcrumbs
-                        .container
+                .section-grid-nav
+                    .container
+                        .section-grid-nav__breadcrumbs
+                            .section-grid-nav__hamburger
+                                button.hamburger.hamburger_green.js-nav-grid-toggle
+                                    i.hamburger__line.hamburger__line_top
+                                    i.hamburger__line
+                                    i.hamburger__line.hamburger__line_bottom
                             nav.breadcrumbs
                                 a(href='#').breadcrumbs__item Главная
                                 span.breadcrumbs__item Реализованные проекты
 
-                    .container
-                        .st-section__section.tablet-dn
+                        .section-grid-nav__grid-nav
+                            .section-grid-nav__close
+                                button.close.close_green.js-nav-grid-close
                             include pug/components/gridNav
 
+                .st-section.st-section_first
+                    .container
                         .st-section__section
                             .st-section__title
                                 h1.title.title_line-top Ковшовый элеватор (нория)
@@ -186,7 +194,7 @@ html
 
 
 
-include pug/components/footer
+            include pug/components/footer
 
 
         include pug/scripts.pug

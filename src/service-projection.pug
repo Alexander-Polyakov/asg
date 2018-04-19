@@ -1,0 +1,96 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Главная')
+        include pug/styles.pug
+
+    body
+        .page
+            .page__header
+                include pug/components/header
+
+            main.page__main
+                .st-section.st-section_first
+                    .st-section__breadcrumbs
+                        .container
+                            nav.breadcrumbs
+                                a(href='#').breadcrumbs__item Главная
+                                span.breadcrumbs__item Запасные части
+
+                    .container.container_width_1000
+                        .st-section__title
+                            .container
+                                h1.title.title_line-top Проектирование
+
+                        .st-section__section
+                            .container.container_width_550
+                                img(src='./images/preview-full/projection-img7.jpg').content-full-image
+                            .gray-info-box
+                                .gray-info-box__title
+                                    h3.title.title_section-title.title_line-top ООО «ASG» выполняет разработку проектной и рабочей <br/> документации по следующим направлениям:
+                                .gray-info-box__grid
+                                    .gray-info-box__grid-item
+                                        .st-text.st-text_fz_18.st-text_ttu.st-text_list
+                                            p новое строительство:
+                                        .st-text.st-text_fz_18.st-text_ttu.st-text_pl_45.st-text_list
+                                            p элеваторов
+                                            p мини элеваторов
+                                            p семенных линий
+                                    .gray-info-box__grid-item
+                                        .st-text.st-text_fz_18.st-text_ttu.st-text_list
+                                            p реконструкция зерносушильных и зерноочистительных комплексовв семенных линий
+                                    .gray-info-box__grid-item
+                                        .st-text.st-text_fz_18.st-text_ttu.st-text_list
+                                            p техническое перевооружение зерносушильных и зерноочистительных комплексов
+
+                        .st-section__section
+                            .st-section__title
+                                h3.title.title_section-title.title_line-top При выполнении проектных работ, компания <br/> «ASG» учитывает следующие показатели:
+                            .text-image
+                                .text-image__image-box
+                                    .image-proportional-box.image-proportional-box_size_76
+                                        img(src='./images/preview-full/dfdfd.png').image-proportional-box__image
+                                .text-image__text-box
+                                    .gray-text-container
+                                        i.gray-text-container__top-line.st-line.st-line_width_50
+                                        i.gray-text-container__bottom-line.st-line.st-line_width_50
+                                        .st-text.st-text_list
+                                            p Экономичность, надежность, безопасность, долговечность запроектированных объектов.
+                                            p Соответствие проектных разработок нормативным документам по проектированию (требованиям промышленной и пожарной безопасности, СНиПов, санэпиднадзора, нормам  и правилам ведения технологического процесса и др.).
+                                            p Соответствие мощностей и др. технико-экономических показателей введенных в эксплуатацию объектов мощностям и показателям, предусмотренным заданием на проектирование.
+                        .st-section__section
+                            .container.container_width_700
+                                .st-section__title
+                                    h3.title.title_section-title.title_line-top выполнениЕ ВСЕХ РАБОТ «под ключ»
+                                .st-text
+                                    p ООО «ASG» — компания, предоставляющая полный спектр услуг по строительству предприятия Заказчика и сдаче построенного объекта «под ключ». Это позволяет Заказчику получить комплексную услугу, не заключать несколько договоров с различными организациями, тем самым избавиться от проблем стыковки и оптимизации производимых работ, так как проектирование, комплектация, а также строительно-монтажные и пусконаладочные работы со сдачей построенного объекта «под ключ» и обучением персонала производятся одной организацией.
+                        .st-section__section
+                            .gallery-grid.js-carousel-gallery.owl-carousel.owl-theme
+                                .gallery-grid__item
+                                    a(href='./images/preview-full/projection-img1.jpg'  data-fancybox='gallery').image-proportional-box.image-proportional-box_size_76.image-proportional-box_gallery.image-proportional-box_border_green
+                                        img(src='./images/preview-small/projection-img1.jpg').image-proportional-box__image
+                                .gallery-grid__item
+                                    a(href='./images/preview-full/projection-img2.jpg'  data-fancybox='gallery').image-proportional-box.image-proportional-box_size_76.image-proportional-box_gallery.image-proportional-box_border_green
+                                        img(src='./images/preview-small/projection-img2.jpg').image-proportional-box__image
+                                .gallery-grid__item
+                                    a(href='./images/preview-full/projection-img3.jpg'  data-fancybox='gallery').image-proportional-box.image-proportional-box_size_76.image-proportional-box_gallery.image-proportional-box_border_green
+                                        img(src='./images/preview-small/projection-img3.jpg').image-proportional-box__image
+                                .gallery-grid__item
+                                    a(href='./images/preview-full/projection-img4.jpg'  data-fancybox='gallery').image-proportional-box.image-proportional-box_size_76.image-proportional-box_gallery
+                                        img(src='./images/preview-small/projection-img4.jpg').image-proportional-box__image
+                                .gallery-grid__item
+                                    a(href='./images/preview-full/projection-img5.jpg'  data-fancybox='gallery').image-proportional-box.image-proportional-box_size_76.image-proportional-box_gallery
+                                        img(src='./images/preview-small/projection-img5.jpg').image-proportional-box__image
+                                .gallery-grid__item
+                                    a(href='./images/preview-full/projection-img6.jpg'  data-fancybox='gallery').image-proportional-box.image-proportional-box_size_76.image-proportional-box_gallery
+                                        img(src='./images/preview-small/projection-img6.jpg').image-proportional-box__image
+
+
+            include pug/components/footer
+
+
+    include pug/scripts.pug

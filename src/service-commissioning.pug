@@ -1,0 +1,74 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Главная')
+        include pug/styles.pug
+
+    body
+        .page
+            .page__header
+                include pug/components/header
+
+            main.page__main
+                .st-section.st-section_first
+                    .st-section__breadcrumbs
+                        .container
+                            nav.breadcrumbs
+                                a(href='#').breadcrumbs__item Главная
+                                span.breadcrumbs__item Пуско-наладка
+
+                    .container.container_width_1000
+                        .st-section__title
+                            .container.container_width_1000
+                                h1.title.title_line-top Пуско-наладка
+
+                        .st-section__section
+                            .st-section__title
+                                h3.title.title_section-title.title_line-top ПОЛНЫЙ КОМПЛЕКС пуско-наладочныХ работ <br/> и ввод объектов в эксплуатацию
+                            .text-image
+                                .text-image__image-box
+                                    .image-proportional-box.image-proportional-box_size_76
+                                        img(src='./images/preview-full/commissioning-img1.jpg').image-proportional-box__image
+                                .text-image__text-box
+                                    .gray-text-container
+                                        i.gray-text-container__top-line.st-line.st-line_width_50
+                                        i.gray-text-container__bottom-line.st-line.st-line_width_50
+                                        .st-text.st-text_list
+                                            p Компания «ASG» выполняет пуско-наладочные работы и ввод объектов в эксплуатацию высокопрофессиональными специалистами, прошедшими обучение и аттестацию в соответствии с требованиями существующих Норм и Правил.
+                                            p Специалистами компании осуществляется комплексная проверка всего процесса производства и его отдельных технологических цепочек – эффективная настройка и отладка режимов работы, взаимодействие оборудования и систем, комплексные испытания всего оборудования на холостом ходу и под нагрузкой в максимально допустимых режимах.
+                                            p Цель пусконаладочных работ в период комплексного опробования оборудования — наладка оборудования, электротехнических и автоматических систем для обеспечения выпуска продукта в объеме, соответствующем нормам освоения проектных мощностей в начальный период, а также сдача объекта Государственной приемочной комиссии.
+
+                        .st-section__section
+                            .st-section__title
+                                h3.title.title_section-title.title_line-top Комплекс пуско-наладочных работ включает:
+                            .text-image
+                                .text-image__image-box
+                                    .image-proportional-box.image-proportional-box_size_76
+                                        img(src='./images/preview-full/commissioning-img2.jpg').image-proportional-box__image
+                                .text-image__text-box
+                                    .gray-text-container
+                                        i.gray-text-container__top-line.st-line.st-line_width_50
+                                        i.gray-text-container__bottom-line.st-line.st-line_width_50
+                                        p.mb10
+                                            strong Комплекс пуско-наладочных работ включает:
+                                        .st-text.st-text_list.mb20
+                                            p проведение индивидуальных и комплексных испытаний оборудования;
+                                            p настройка автоматической системы управления;
+                                            p вывод оборудования на проектную мощность;
+                                            p обучение и аттестация персонала заказчика;
+                                            p оформление соответствующей документации.
+                                        .st-text.st-text_list
+                                            p Комплекс пуско-наладочных работ, проведенный специалистами компании «ASG» – гарантия надежной и эффективной работы Вашего предприятия.
+
+
+
+
+
+            include pug/components/footer
+
+
+    include pug/scripts.pug

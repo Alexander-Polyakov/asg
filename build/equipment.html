@@ -23,7 +23,7 @@
                 </div>
               </div>
               <div class="page-header__hamburger">
-                <button class="hamburger js-open-menu"><i class="hamburger__line hamburger__line_top"></i><i class="hamburger__line"></i><i class="hamburger__line hamburger__line_bottom"></i></button>
+                <button class="hamburger js-page-menu-open"><i class="hamburger__line hamburger__line_top"></i><i class="hamburger__line"></i><i class="hamburger__line hamburger__line_bottom"></i></button>
               </div>
             </div>
           </div>
@@ -67,125 +67,88 @@
         </div>
       </div>
       <main class="page__main">
-        <div class="st-section st-section_first">
-          <div class="st-section__breadcrumbs">
-            <div class="container">
+        <div class="section-grid-nav">
+          <div class="container">
+            <div class="section-grid-nav__breadcrumbs">
+              <div class="section-grid-nav__hamburger">
+                <button class="hamburger hamburger_green js-nav-grid-toggle"><i class="hamburger__line hamburger__line_top"></i><i class="hamburger__line"></i><i class="hamburger__line hamburger__line_bottom"></i></button>
+              </div>
               <nav class="breadcrumbs"><a class="breadcrumbs__item" href="#">Главная</a><span class="breadcrumbs__item">Реализованные проекты</span></nav>
             </div>
-          </div>
-          <div class="container">
-            <div class="st-section__section tablet-dn">
+            <div class="section-grid-nav__grid-nav">
+              <div class="section-grid-nav__close">
+                <button class="close close_green js-nav-grid-close"></button>
+              </div>
               <div class="grid-nav">
                 <div class="grid-nav__item">
-                  <div class="grid-nav-item">
-                    <div class="grid-nav-item__default"><img class="grid-nav-item__icon" src="./images/icons/grid-nav-icon1.svg">
-                      <div class="grid-nav-item__link">Оборудование для приемки зерна</div>
-                    </div>
+                  <div class="grid-nav-item"><a class="grid-nav-item__link" href="#"><img class="grid-nav-item__icon" src="./images/icons/grid-nav-icon1.svg">
+                      <div class="grid-nav-item__link-text">Оборудование для приемки зерна</div></a></div>
+                </div>
+                <div class="grid-nav__item">
+                  <div class="grid-nav-item"><a class="grid-nav-item__link" href="#"><img class="grid-nav-item__icon" src="./images/icons/service-icon2.svg">
+                      <div class="grid-nav-item__link-text">Транспортное оборудование</div></a>
+                    <button class="grid-nav-item__toggle"></button>
                     <div class="grid-nav-item__dropbox">
-                      <ul class="dropmenu-list dropmenu__nav-list">
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Оборудование для приемки зерна</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Транспортное оборудование</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Зерноочистительное оборудование</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Изготовление рекламных конструкций</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Зерносушильное оборудование</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Оборудование для  хранения зерна</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Аспирационное оборудование</a></li>
-                      </ul>
+                      <div class="grid-nav-item__dropbox-content">
+                        <ul class="dropmenu-list dropmenu-list_fz18">
+                          <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Машины предварительной очистки зерна</a></li>
+                          <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Машины первичной очистки зерна</a></li>
+                          <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Машины вторичной очистки зерна</a></li>
+                          <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Фотосепараторы</a></li>
+                          <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Самопередвижные сепараторы</a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="grid-nav__item">
-                  <div class="grid-nav-item">
-                    <div class="grid-nav-item__default"><img class="grid-nav-item__icon" src="./images/icons/grid-nav-icon1.svg">
-                      <div class="grid-nav-item__link">Транспортное оборудование</div>
-                    </div>
+                  <div class="grid-nav-item"><a class="grid-nav-item__link" href="#"><img class="grid-nav-item__icon" src="./images/icons/menu-icon8.svg">
+                      <div class="grid-nav-item__link-text">Зерноочистительное оборудование</div></a></div>
+                </div>
+                <div class="grid-nav__item">
+                  <div class="grid-nav-item"><a class="grid-nav-item__link" href="#"><img class="grid-nav-item__icon" src="./images/icons/service-icon1.svg">
+                      <div class="grid-nav-item__link-text">Зерносушильное оборудование</div></a></div>
+                </div>
+                <div class="grid-nav__item">
+                  <div class="grid-nav-item"><a class="grid-nav-item__link" href="#"><img class="grid-nav-item__icon" src="./images/icons/grid-nav-icon2.svg">
+                      <div class="grid-nav-item__link-text">Оборудование для хранения зерна</div></a>
+                    <button class="grid-nav-item__toggle"></button>
                     <div class="grid-nav-item__dropbox">
-                      <ul class="dropmenu-list dropmenu__nav-list">
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Оборудование для приемки зерна</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Транспортное оборудование</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Зерноочистительное оборудование</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Изготовление рекламных конструкций</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Зерносушильное оборудование</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Оборудование для  хранения зерна</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Аспирационное оборудование</a></li>
-                      </ul>
+                      <div class="grid-nav-item__dropbox-content">
+                        <ul class="dropmenu-list dropmenu-list_fz18">
+                          <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Машины предварительной очистки зерна</a></li>
+                          <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Машины первичной очистки зерна</a></li>
+                          <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Машины вторичной очистки зерна</a></li>
+                          <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Фотосепараторы</a></li>
+                          <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Самопередвижные сепараторы</a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="grid-nav__item">
-                  <div class="grid-nav-item">
-                    <div class="grid-nav-item__default"><img class="grid-nav-item__icon" src="./images/icons/grid-nav-icon1.svg">
-                      <div class="grid-nav-item__link">Зерноочистительное оборудование</div>
-                    </div>
+                  <div class="grid-nav-item"><a class="grid-nav-item__link" href="#"><img class="grid-nav-item__icon" src="./images/icons/grid-nav-icon3.svg">
+                      <div class="grid-nav-item__link-text">Аспирационное оборудование</div></a>
+                    <button class="grid-nav-item__toggle"></button>
                     <div class="grid-nav-item__dropbox">
-                      <ul class="dropmenu-list dropmenu__nav-list">
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Оборудование для приемки зерна</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Транспортное оборудование</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Зерноочистительное оборудование</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Изготовление рекламных конструкций</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Зерносушильное оборудование</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Оборудование для  хранения зерна</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Аспирационное оборудование</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="grid-nav__item">
-                  <div class="grid-nav-item">
-                    <div class="grid-nav-item__default"><img class="grid-nav-item__icon" src="./images/icons/grid-nav-icon1.svg">
-                      <div class="grid-nav-item__link">Зерносушильное оборудование</div>
-                    </div>
-                    <div class="grid-nav-item__dropbox">
-                      <ul class="dropmenu-list dropmenu__nav-list">
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Оборудование для приемки зерна</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Транспортное оборудование</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Зерноочистительное оборудование</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Изготовление рекламных конструкций</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Зерносушильное оборудование</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Оборудование для  хранения зерна</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Аспирационное оборудование</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="grid-nav__item">
-                  <div class="grid-nav-item">
-                    <div class="grid-nav-item__default"><img class="grid-nav-item__icon" src="./images/icons/grid-nav-icon1.svg">
-                      <div class="grid-nav-item__link">Оборудование для хранения зерна</div>
-                    </div>
-                    <div class="grid-nav-item__dropbox">
-                      <ul class="dropmenu-list dropmenu__nav-list">
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Оборудование для приемки зерна</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Транспортное оборудование</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Зерноочистительное оборудование</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Изготовление рекламных конструкций</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Зерносушильное оборудование</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Оборудование для  хранения зерна</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Аспирационное оборудование</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="grid-nav__item">
-                  <div class="grid-nav-item">
-                    <div class="grid-nav-item__default"><img class="grid-nav-item__icon" src="./images/icons/grid-nav-icon1.svg">
-                      <div class="grid-nav-item__link">Аспирационное оборудование</div>
-                    </div>
-                    <div class="grid-nav-item__dropbox">
-                      <ul class="dropmenu-list dropmenu__nav-list">
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Оборудование для приемки зерна</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Транспортное оборудование</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Зерноочистительное оборудование</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Изготовление рекламных конструкций</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Зерносушильное оборудование</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Оборудование для  хранения зерна</a></li>
-                        <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Аспирационное оборудование</a></li>
-                      </ul>
+                      <div class="grid-nav-item__dropbox-content">
+                        <ul class="dropmenu-list dropmenu-list_fz18">
+                          <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Машины предварительной очистки зерна</a></li>
+                          <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Машины первичной очистки зерна</a></li>
+                          <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Машины вторичной очистки зерна</a></li>
+                          <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Фотосепараторы</a></li>
+                          <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Самопередвижные сепараторы</a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="st-section st-section_first">
+          <div class="container">
             <div class="st-section__section">
               <div class="st-section__title">
                 <h1 class="title title_line-top">Ковшовый элеватор (нория)</h1>
@@ -356,70 +319,84 @@
           </div>
         </div>
       </main>
-    </div>
-  </body>
-</html>
-<div class="page-footer"><img class="page-footer__icon" src="./images/icons/triangle2.svg">
-  <div class="container container_width_1000">
-    <div class="footer-grid">
-      <div class="footer-grid__item">
-        <div class="footer-info">
-          <div class="footer-info__info">394016, г. Воронеж, ул. Хользунова, д.107</div>
-          <div class="footer-info__phones">
-            <p><a class="footer-info__link footer-info__link_phone" href="tel:+7(473) 333-57-27">+7(473) 333-57-27</a></p>
-            <p><a class="footer-info__link footer-info__link_phone" href="tel:+7(473) 333-57-27">8-930-414-7-38</a></p>
+      <div class="page-footer"><img class="page-footer__icon" src="./images/icons/triangle2.svg">
+        <div class="container container_width_1000">
+          <div class="footer-grid">
+            <div class="footer-grid__item">
+              <div class="footer-info">
+                <div class="footer-info__info">394016, г. Воронеж, ул. Хользунова, д.107</div>
+                <div class="footer-info__phones">
+                  <p><a class="footer-info__link footer-info__link_phone" href="tel:+7(473) 333-57-27">+7(473) 333-57-27</a></p>
+                  <p><a class="footer-info__link footer-info__link_phone" href="tel:+7(473) 333-57-27">8-930-414-7-38</a></p>
+                </div>
+                <div class="footer-info__mail"><a class="footer-info__link footer-info__link_mail" href="mailto:ivonin_asg@bk.ru">ivonin_asg@bk.ru</a></div>
+              </div>
+            </div>
+            <div class="footer-grid__item"><img class="footer-grid__top-icon" src="./images/icons/triangle.svg">
+              <ul class="footer-nav-list">
+                <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">О компании</a></li>
+                <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">новости</a></li>
+                <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">Услуги</a></li>
+                <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">Оборудование</a></li>
+                <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">Запасные части</a></li>
+              </ul>
+            </div>
+            <div class="footer-grid__item"><img class="footer-grid__top-icon" src="./images/icons/triangle.svg">
+              <ul class="footer-nav-list">
+                <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">Реализованные</a></li>
+                <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">проекты</a></li>
+                <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">Финансирование</a></li>
+                <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">Партнёры</a></li>
+                <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="footer-info__mail"><a class="footer-info__link footer-info__link_mail" href="mailto:ivonin_asg@bk.ru">ivonin_asg@bk.ru</a></div>
         </div>
       </div>
-      <div class="footer-grid__item"><img class="footer-grid__top-icon" src="./images/icons/triangle.svg">
-        <ul class="footer-nav-list">
-          <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">О компании</a></li>
-          <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">новости</a></li>
-          <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">Услуги</a></li>
-          <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">Оборудование</a></li>
-          <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">Запасные части</a></li>
-        </ul>
-      </div>
-      <div class="footer-grid__item"><img class="footer-grid__top-icon" src="./images/icons/triangle.svg">
-        <ul class="footer-nav-list">
-          <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">Реализованные</a></li>
-          <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">проекты</a></li>
-          <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">Финансирование</a></li>
-          <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">Партнёры</a></li>
-          <li class="footer-nav-list__item"><a class="footer-nav-list__link" href="#">Контакты
-              <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-              <script src="js/vendors.js"></script>
-              <script src="js/main.js"></script></a></li>
+      <div class="page__menu js-page-menu">
+        <div class="page__menu-close">
+          <button class="close close_green js-page-menu-close"></button>
+        </div>
+        <ul class="main-nav">
+          <li class="main-nav__item main-nav-item"><a class="main-nav-item__link" href="#">
+              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/menu-icon1.svg"></div>
+              <div class="main-nav-item__link-text">о компании</div></a></li>
+          <li class="main-nav__item main-nav-item"><a class="main-nav-item__link" href="#">
+              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/menu-icon2.svg"></div>
+              <div class="main-nav-item__link-text">Оборудование</div></a></li>
+          <li class="main-nav__item main-nav-item js-dropmenu">
+            <button class="main-nav-item__toggle-dropmenu js-dropmenu-toggle"></button><a class="main-nav-item__link" href="#">
+              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/menu-icon3.svg"></div>
+              <div class="main-nav-item__link-text">Услуги</div></a>
+            <div class="main-nav-item__dropmenu">
+              <ul class="dropmenu-list">
+                <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Оборудование для приемки зерна</a></li>
+                <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Транспортное оборудование</a></li>
+                <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Зерноочистительное оборудование</a></li>
+                <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Изготовление рекламных конструкций</a></li>
+                <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Зерносушильное оборудование</a></li>
+                <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Оборудование для  хранения зерна</a></li>
+                <li class="dropmenu-list__item"><a class="dropmenu-list__link" href="#">Аспирационное оборудование</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-nav__item main-nav-item"><a class="main-nav-item__link" href="#">
+              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/menu-icon4.svg"></div>
+              <div class="main-nav-item__link-text">Реализованные проекты</div></a></li>
+          <li class="main-nav__item main-nav-item"><a class="main-nav-item__link" href="#">
+              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/menu-icon5.svg"></div>
+              <div class="main-nav-item__link-text">сервис</div></a></li>
+          <li class="main-nav__item main-nav-item"><a class="main-nav-item__link" href="#">
+              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/menu-icon6.svg"></div>
+              <div class="main-nav-item__link-text">новости</div></a></li>
+          <li class="main-nav__item main-nav-item"><a class="main-nav-item__link" href="#">
+              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/menu-icon7.svg"></div>
+              <div class="main-nav-item__link-text">Контакты</div></a></li>
         </ul>
       </div>
     </div>
-  </div>
-</div>
-<!--.page__menu.js-page-menu-->
-<!--    button.page__menu-close.js-page-menu-close-->
-<!--    ul.main-nav-->
-<!--        li.main-nav__item.main-nav-item-->
-<!--            a(href='#').main-nav-item__link ГЛАВНАЯ-->
-<!--        li.main-nav__item.main-nav-item-->
-<!--            a(href='#').main-nav-item__link КАРТА-->
-<!--        li.main-nav__item.main-nav-item-->
-<!--            a(href='#').main-nav-item__link РЕКЛАМНЫХ КОНСТРУКЦИЙ-->
-<!--        li.main-nav__item.main-nav-item.js-dropmenu-->
-<!--            a(href='#').main-nav-item__link.js-dropmenu-toggle-->
-<!--                | РЕКЛАМНЫЕ УСЛУГИ-->
-<!--                i.main-nav-item__arrow-->
-<!--            .main-nav-item__dropmenu-->
-<!--                ul.dropmenu-list-->
-<!--                    li.dropmenu-list__item-->
-<!--                        a(href='#').dropmenu-list__link Интерьерная  и широкоформатная печать-->
-<!--                    li.dropmenu-list__item-->
-<!--                        a(href='#').dropmenu-list__link Разработка макетов-->
-<!--                    li.dropmenu-list__item-->
-<!--                        a(href='#').dropmenu-list__link Собственное производство рекламных щитов-->
-<!--                    li.dropmenu-list__item-->
-<!--                        a(href='#').dropmenu-list__link Изготовление рекламных конструкций-->
-<!--        li.main-nav__item.main-nav-item-->
-<!--            a(href='#').main-nav-item__link контакты-->
-<!--        li.main-nav__item.main-nav-item.main-nav-item_dark-->
-<!--            a(href='#').main-nav-item__link Связаться с менеджером-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/vendors.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

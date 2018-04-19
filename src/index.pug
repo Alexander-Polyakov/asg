@@ -14,7 +14,23 @@ html
 
             main.page__main
                 .preview-section
-                    .preview-section__bg(style='background-image: url("./images/previews/preview1.jpg")')
+                    .preview-section__slider
+                        ul#slides
+                            li.slide
+                                .slide-partial.slide-left
+                                    img(src='./images/slides/slide1-left.jpg')
+                                .slide-partial.slide-right
+                                    img(src='./images/slides/slide1-right.jpg')
+                            li.slide
+                                .slide-partial.slide-left
+                                    img(src='./images/slides/slide2-left.jpg')
+                                .slide-partial.slide-right
+                                    img(src='./images/slides/slide2-right.jpg')
+                            li.slide
+                                .slide-partial.slide-left
+                                    img(src='./images/slides/slide3-left.jpg')
+                                .slide-partial.slide-right
+                                    img(src='./images/slides/slide3-right.jpg')
                     .container.preview-section__container
                         .tiered-title
                             span.tiered-title__line опыт.

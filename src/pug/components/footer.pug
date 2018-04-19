@@ -41,30 +41,59 @@
                     li.footer-nav-list__item
                         a(href='#').footer-nav-list__link Контакты
 
-//.page__menu.js-page-menu
-//    button.page__menu-close.js-page-menu-close
-//    ul.main-nav
-//        li.main-nav__item.main-nav-item
-//            a(href='#').main-nav-item__link ГЛАВНАЯ
-//        li.main-nav__item.main-nav-item
-//            a(href='#').main-nav-item__link КАРТА
-//        li.main-nav__item.main-nav-item
-//            a(href='#').main-nav-item__link РЕКЛАМНЫХ КОНСТРУКЦИЙ
-//        li.main-nav__item.main-nav-item.js-dropmenu
-//            a(href='#').main-nav-item__link.js-dropmenu-toggle
-//                | РЕКЛАМНЫЕ УСЛУГИ
-//                i.main-nav-item__arrow
-//            .main-nav-item__dropmenu
-//                ul.dropmenu-list
-//                    li.dropmenu-list__item
-//                        a(href='#').dropmenu-list__link Интерьерная  и широкоформатная печать
-//                    li.dropmenu-list__item
-//                        a(href='#').dropmenu-list__link Разработка макетов
-//                    li.dropmenu-list__item
-//                        a(href='#').dropmenu-list__link Собственное производство рекламных щитов
-//                    li.dropmenu-list__item
-//                        a(href='#').dropmenu-list__link Изготовление рекламных конструкций
-//        li.main-nav__item.main-nav-item
-//            a(href='#').main-nav-item__link контакты
-//        li.main-nav__item.main-nav-item.main-nav-item_dark
-//            a(href='#').main-nav-item__link Связаться с менеджером
+.page__menu.js-page-menu
+    .page__menu-close
+        button.close.close_green.js-page-menu-close
+    ul.main-nav
+        li.main-nav__item.main-nav-item
+            a(href='#').main-nav-item__link
+                .main-nav-item__icon-box
+                    img(src='./images/icons/menu-icon1.svg').main-nav-item__link-icon
+                .main-nav-item__link-text о компании
+        li.main-nav__item.main-nav-item
+            a(href='#').main-nav-item__link
+                .main-nav-item__icon-box
+                    img(src='./images/icons/menu-icon2.svg').main-nav-item__link-icon
+                .main-nav-item__link-text Оборудование
+        li.main-nav__item.main-nav-item.js-dropmenu
+            button.main-nav-item__toggle-dropmenu.js-dropmenu-toggle
+            a(href='#').main-nav-item__link
+                .main-nav-item__icon-box
+                    img(src='./images/icons/menu-icon3.svg').main-nav-item__link-icon
+                .main-nav-item__link-text Услуги
+            .main-nav-item__dropmenu
+                    ul.dropmenu-list
+                        li.dropmenu-list__item
+                            a(href='#').dropmenu-list__link Оборудование для приемки зерна
+                        li.dropmenu-list__item
+                            a(href='#').dropmenu-list__link Транспортное оборудование
+                        li.dropmenu-list__item
+                            a(href='#').dropmenu-list__link Зерноочистительное оборудование
+                        li.dropmenu-list__item
+                            a(href='#').dropmenu-list__link Изготовление рекламных конструкций
+                        li.dropmenu-list__item
+                            a(href='#').dropmenu-list__link Зерносушильное оборудование
+                        li.dropmenu-list__item
+                            a(href='#').dropmenu-list__link Оборудование для  хранения зерна
+                        li.dropmenu-list__item
+                            a(href='#').dropmenu-list__link Аспирационное оборудование
+        li.main-nav__item.main-nav-item
+            a(href='#').main-nav-item__link
+                .main-nav-item__icon-box
+                    img(src='./images/icons/menu-icon4.svg').main-nav-item__link-icon
+                .main-nav-item__link-text Реализованные проекты
+        li.main-nav__item.main-nav-item
+            a(href='#').main-nav-item__link
+                .main-nav-item__icon-box
+                    img(src='./images/icons/menu-icon5.svg').main-nav-item__link-icon
+                .main-nav-item__link-text сервис
+        li.main-nav__item.main-nav-item
+            a(href='#').main-nav-item__link
+                .main-nav-item__icon-box
+                    img(src='./images/icons/menu-icon6.svg').main-nav-item__link-icon
+                .main-nav-item__link-text новости
+        li.main-nav__item.main-nav-item
+            a(href='#').main-nav-item__link
+                .main-nav-item__icon-box
+                    img(src='./images/icons/menu-icon7.svg').main-nav-item__link-icon
+                .main-nav-item__link-text Контакты

@@ -1,0 +1,90 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Главная')
+        include pug/styles.pug
+
+    body
+        .page
+            .page__header
+                include pug/components/header
+
+            main.page__main
+                .st-section.st-section_first
+                    .st-section__breadcrumbs
+                        .container
+                            nav.breadcrumbs
+                                a(href='#').breadcrumbs__item Главная
+                                span.breadcrumbs__item СТРОИТЕЛЬСТВО И МОНТАЖ
+
+                    .container.container_width_1000
+                        .st-section__title
+                            .container.container_width_1000
+                                h1.title.title_line-top СТРОИТЕЛЬСТВО И МОНТАЖ
+
+                        .st-section__section
+                            .st-section__title
+                                h3.title.title_section-title.title_line-top новые технологоии строительства
+                            .text-image
+                                .text-image__image-box
+                                    .image-proportional-box.image-proportional-box_size_76
+                                        img(src='./images/preview-full/montage-img1.jpg').image-proportional-box__image
+                                .text-image__text-box
+                                    .gray-text-container
+                                        i.gray-text-container__top-line.st-line.st-line_width_50
+                                        i.gray-text-container__bottom-line.st-line.st-line_width_50
+                                        .st-text.st-text_list
+                                            p
+                                                | Внедрение новых технологий строительства, использование современного оборудования и квалифицированный персонал — основа успешной деятельности компании на протяжении уже
+                                                |
+                                                strong 11-ти  лет!
+                                            p Компанией «ASG» накоплен огромный опыт строительно-монтажных работ, налажены партнерские отношения с производителями специальных работ. Результатом этого является реализация объектов высокого уровня качества в кратчайшие сроки. Коллектив компании укомплектован опытными инженерно-техническими и рабочими кадрами, который способен быстро мобилизоваться и качественно выполнить поставленные задачи.
+
+                        .st-section__section
+                            .st-section__title
+                                h3.title.title_section-title.title_line-top Мы выполняем следующие виды строительно-монтажных работ:
+                            .text-image
+                                .text-image__image-box
+                                    .image-proportional-box.image-proportional-box_size_90
+                                        img(src='./images/preview-full/montage-img2.jpg').image-proportional-box__image
+                                .text-image__text-box
+                                    .gray-text-container
+                                        i.gray-text-container__top-line.st-line.st-line_width_50
+                                        i.gray-text-container__bottom-line.st-line.st-line_width_50
+                                        .st-text.st-text_list
+                                            p Производство земляных работ
+                                            p Устройство свайных оснований
+                                            p Устройство монолитных фундаментов
+                                            p Монтаж металлоконструкций
+                                            p Монтаж технологического и транспортного оборудования
+                                            p Монтаж систем аспирации и вентиляции
+                                            p Электромонтажные работы
+
+                        .st-section__section
+                            .st-section__title
+                                h3.title.title_section-title.title_line-top выполнениЕ ВСЕХ РАБОТ СТРОГО ПО спипам
+                            .container.container_width_700
+                                .st-text
+                                    p В ходе выполнения всего цикла работ специалисты компании следят за соблюдением всех требований соответствующих Государственных стандартов, СНиПов, отраслевых нормативных актов, норм охраны труда, пожарной безопасности и защиты окружающей среды.
+
+                        .st-section__section
+                            .gallery-grid.js-carousel-gallery.owl-carousel.owl-theme
+                                .gallery-grid__item
+                                    a(href='./images/preview-full/montage-img3.jpg'  data-fancybox='gallery').image-proportional-box.image-proportional-box_size_76.image-proportional-box_gallery
+                                        img(src='./images/preview-small/montage-img3.jpg').image-proportional-box__image
+                                .gallery-grid__item
+                                    a(href='./images/preview-full/montage-img4.jpg'  data-fancybox='gallery').image-proportional-box.image-proportional-box_size_76.image-proportional-box_gallery
+                                        img(src='./images/preview-small/montage-img4.jpg').image-proportional-box__image
+                                .gallery-grid__item
+                                    a(href='./images/preview-full/montage-img5.jpg'  data-fancybox='gallery').image-proportional-box.image-proportional-box_size_76.image-proportional-box_gallery
+                                        img(src='./images/preview-small/montage-img5.jpg').image-proportional-box__image
+
+
+            include pug/components/footer
+
+
+    include pug/scripts.pug
