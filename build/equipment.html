@@ -209,7 +209,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="slider-descr-box__button"><a class="button" href="#">оставить заявку</a></div>
+                      <div class="slider-descr-box__button"><a class="button js-open-popup" href="#" data-target-popup="order">оставить заявку</a></div>
                     </div>
                   </div>
                 </div>
@@ -359,14 +359,14 @@
         </div>
         <ul class="main-nav">
           <li class="main-nav__item main-nav-item"><a class="main-nav-item__link" href="#">
-              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/menu-icon1.svg"></div>
+              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/mobile-menu8.svg"></div>
               <div class="main-nav-item__link-text">о компании</div></a></li>
           <li class="main-nav__item main-nav-item"><a class="main-nav-item__link" href="#">
-              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/menu-icon2.svg"></div>
+              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/mobile-menu4.svg"></div>
               <div class="main-nav-item__link-text">Оборудование</div></a></li>
           <li class="main-nav__item main-nav-item js-dropmenu">
             <button class="main-nav-item__toggle-dropmenu js-dropmenu-toggle"></button><a class="main-nav-item__link" href="#">
-              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/menu-icon3.svg"></div>
+              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/mobile-menu7.svg"></div>
               <div class="main-nav-item__link-text">Услуги</div></a>
             <div class="main-nav-item__dropmenu">
               <ul class="dropmenu-list">
@@ -381,18 +381,62 @@
             </div>
           </li>
           <li class="main-nav__item main-nav-item"><a class="main-nav-item__link" href="#">
-              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/menu-icon4.svg"></div>
+              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/mobile-menu5.svg"></div>
               <div class="main-nav-item__link-text">Реализованные проекты</div></a></li>
           <li class="main-nav__item main-nav-item"><a class="main-nav-item__link" href="#">
-              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/menu-icon5.svg"></div>
+              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/mobile-menu3.svg"></div>
               <div class="main-nav-item__link-text">сервис</div></a></li>
           <li class="main-nav__item main-nav-item"><a class="main-nav-item__link" href="#">
-              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/menu-icon6.svg"></div>
+              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/mobile-menu6.svg"></div>
               <div class="main-nav-item__link-text">новости</div></a></li>
           <li class="main-nav__item main-nav-item"><a class="main-nav-item__link" href="#">
-              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/menu-icon7.svg"></div>
+              <div class="main-nav-item__icon-box"><img class="main-nav-item__link-icon" src="./images/icons/mobile-menu2.svg"></div>
               <div class="main-nav-item__link-text">Контакты</div></a></li>
         </ul>
+      </div>
+      <div class="page__overlay js-popups-overlay js-close-popups js-close-menu"></div>
+      <div class="page__popups popups js-popups">
+        <div class="popups__popups-wrapper">
+          <div class="popups__popup popups__popup_width_610 form-popup" data-popup-name="order"><img class="form-popup__bottom-icon" src="./images/icons/triangle2.svg"><img class="form-popup__top-icon" src="./images/icons/triangle2.svg">
+            <div class="form-popup__close js-close-popups">
+              <div class="close close_green"></div>
+            </div>
+            <div class="form-popup__title">заявка на покупку оборудования</div>
+            <div class="form-popup__form form">
+              <div class="form__section">
+                <div class="form__input-title"><span class="form__input-required">*</span>
+                  ваше имя
+                </div>
+                <input class="form__input st-input" type="text">
+              </div>
+              <div class="form__section">
+                <div class="form__input-title"><span class="form__input-required">*</span>
+                  Ваш телефон:
+                </div>
+                <input class="form__input st-input" type="text">
+              </div>
+              <div class="form__section">
+                <div class="form__input-title"><span class="form__input-required">*</span>
+                  Ваш E-mail:
+                </div>
+                <input class="form__input st-input" type="text">
+              </div>
+              <div class="form__section">
+                <div class="form__input-title">Cообщение</div>
+                <textarea class="form__input st-textarea"></textarea>
+              </div>
+              <div class="form__section">
+                <div class="form__info">
+                  Нажимая кнопку, вы принимаете условия
+                  <a class="form__info-link" href="#">«Пользовательского соглашения»</a>
+                  и даете
+                  <a class="form__info-link" href="#">«Согласие на обработку персональных данных»</a>
+                </div>
+              </div>
+              <div class="form__section"><a class="button" href="#">оставить заявку</a></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>

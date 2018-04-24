@@ -1,0 +1,73 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Главная')
+        include pug/styles.pug
+
+    body
+        .page
+            .page__header
+                include pug/components/header
+
+            main.page__main
+                .section-grid-nav
+                    .container
+                        .section-grid-nav__breadcrumbs
+                            .section-grid-nav__hamburger
+                                button.hamburger.hamburger_green.js-nav-grid-toggle
+                                    i.hamburger__line.hamburger__line_top
+                                    i.hamburger__line
+                                    i.hamburger__line.hamburger__line_bottom
+                            nav.breadcrumbs
+                                a(href='#').breadcrumbs__item главная
+                                a(href='#').breadcrumbs__item оборудование
+                                span.breadcrumbs__item Транспортное оборудование
+
+                        .section-grid-nav__title
+                            h1.product-title Транспортное оборудование
+
+                        .section-grid-nav__grid-nav
+                            .section-grid-nav__close
+                                button.close.close_green.js-nav-grid-close
+                            include pug/components/gridNav
+
+
+                .st-section.st-section_first
+                    .container
+                        .projects-grid
+                            .projects-grid__item
+                                a(href='#').project-item.project-item_link
+                                    .project-item__img-box
+                                        .image-proportional-box.image-proportional-box_size_76
+                                            img(src='./images/products/product1.jpg').image-proportional-box__image
+                                    .project-item__footer
+                                        .project-item__name Конвейеры ленточные
+                            .projects-grid__item
+                                a(href='#').project-item.project-item_link
+                                    .project-item__img-box
+                                        .image-proportional-box.image-proportional-box_size_76
+                                            img(src='./images/products/product2.jpg').image-proportional-box__image
+                                    .project-item__footer
+                                        .project-item__name Конвейеры ленточные
+                            .projects-grid__item
+                                a(href='#').project-item.project-item_link
+                                    .project-item__img-box
+                                        .image-proportional-box.image-proportional-box_size_76
+                                            img(src='./images/products/product3.jpg').image-proportional-box__image
+                                    .project-item__footer
+                                        .project-item__name Конвейеры ленточные
+
+                include pug/components/sectionMap
+
+
+
+            include pug/components/footer
+
+
+        include pug/scripts.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src='js/ymap.js')

@@ -91,7 +91,7 @@ html
                                                             img(src='./images/icons/menu-icon1.svg').infographic-list-item__icon
                                                             .infographic-list-item__content - в зерносушилках применяются теплогенераторы только с теплообменником.
                                             .slider-descr-box__button
-                                                a(href='#').button оставить заявку
+                                                a(href='#' data-target-popup='order').button.js-open-popup оставить заявку
                                 .object-slider__bottom
                                     .carousel.owl-carousel.owl-theme.js-carousel
                                         .carousel__item
@@ -195,6 +195,48 @@ html
 
 
             include pug/components/footer
+            .page__overlay.js-popups-overlay.js-close-popups.js-close-menu
+            .page__popups.popups.js-popups
+                .popups__popups-wrapper
+                    .popups__popup.popups__popup_width_610.form-popup(data-popup-name='order')
+                        img(src='./images/icons/triangle2.svg').form-popup__bottom-icon
+                        img(src='./images/icons/triangle2.svg').form-popup__top-icon
+                        .form-popup__close.js-close-popups
+                            .close.close_green
+                        .form-popup__title заявка на покупку оборудования
+                        .form-popup__form.form
+                            .form__section
+                                .form__input-title
+                                    span.form__input-required *
+                                    |
+                                    | ваше имя
+                                input(type='text').form__input.st-input
+                            .form__section
+                                .form__input-title
+                                    span.form__input-required *
+                                    |
+                                    | Ваш телефон:
+                                input(type='text').form__input.st-input
+                            .form__section
+                                .form__input-title
+                                    span.form__input-required *
+                                    |
+                                    | Ваш E-mail:
+                                input(type='text').form__input.st-input
+                            .form__section
+                                .form__input-title Cообщение
+                                textarea.form__input.st-textarea
+                            .form__section
+                                .form__info
+                                    | Нажимая кнопку, вы принимаете условия
+                                    |
+                                    a(href='#').form__info-link «Пользовательского соглашения»
+                                    |
+                                    | и даете
+                                    |
+                                    a(href='#').form__info-link «Согласие на обработку персональных данных»
+                            .form__section
+                                a(href='#').button оставить заявку
 
 
         include pug/scripts.pug

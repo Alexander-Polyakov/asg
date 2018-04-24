@@ -36,6 +36,8 @@ body
     font-family: $ff-rc
     font-weight: 400
     color: #484848
+    &.ovh
+        overflow: hidden
 
 .page
     min-width: 320px
@@ -57,8 +59,93 @@ body
         right: 10px
         top: 10px
         z-index: 30
+    &__popups
+        left: 0
+        width: 100%
+        height: 100%
+        position: fixed
+        top: 0
+        display: none
+        pointer-events: none
+        z-index: 1500
+    &__overlay
+        left: 0
+        width: 100%
+        height: 100%
+        position: fixed
+        top: 0
+        display: none
+        z-index: 1000
+        background-color: #e9e9e9
+        opacity: 0.8
 
 
+.form
+    &_color_black
+        color: #212121
+        .form__info
+            color: #212121
+    &__section
+        margin-bottom: 20px
+        &:last-child
+            margin-bottom: 0
+        &_tac
+            text-align: center
+    &__descr
+        font-size: 24px
+        font-family: "Roboto Condensed"
+        font-weight: 300
+        line-height: 1.2em
+    &__input-title
+        font-size: 18px
+        text-transform: uppercase
+        margin-bottom: 7px 
+    &__input-required
+        color: #a3dd17
+    &__info
+        color: #a2b5b9
+        font-size: 14px
+        line-height: 1.5em
+        font-family: "Roboto Condensed"
+        letter-spacing: -0.1px
+        &_color_black
+            color: #212121
+    &__info-link
+        color: inherit
+        &:hover
+            text-decoration: none
+
+
+.st-input
+    height: 44px
+    width: 100%
+    outline: none
+    background-color: #dbe2e8
+    font-size: 18px
+    color: $dark-blue
+    padding: 0 15px
+    +phc($dark-blue)
+    border: 3px solid #dbe2e8
+    transition: all 0.5s ease 0s
+    &:focus
+        border-color: #a3dd17
+        border-radius: 5px
+
+.st-textarea
+    height: 85px
+    width: 100%
+    outline: none
+    background-color: #dbe2e8
+    font-size: 18px
+    color: $dark-blue
+    padding: 15px
+    +phc($dark-blue)
+    border: 3px solid #dbe2e8
+    transition: all 0.5s ease 0s
+    resize: none
+    &:focus
+        border-color: #a3dd17
+        border-radius: 5px
 
 .page-footer
     background-color: $dark-blue
@@ -86,6 +173,8 @@ body
         max-width: 1030px
     &_width_950
         max-width: 950px
+    &_width_820
+        max-width: 850px
     &_width_750
         max-width: 780px
     &_width_700
@@ -366,6 +455,22 @@ body
             &:before
                 background-color: $light-gray
         
+.product-title
+    font-size: 50px
+    color: $dark-blue
+    line-height: 1.2em
+    text-transform: uppercase
+    text-indent: 30px
+    position: relative
+    &:before
+        content: ''
+        width: 12px
+        height: 12px
+        background-color: #6fc600
+        position: absolute
+        left: 0
+        top: 24px
+        border-radius: 50%
 
 .tiered-title
     overflow: hidden
@@ -551,6 +656,8 @@ body
         right: 5px
         z-index: 10
         display: none
+    &__title
+        margin-bottom: 20px
 
 
 .st-line
@@ -672,6 +779,8 @@ body
     font-family: $ff-rc
     font-weight: 400
     text-indent: 10px
+    &_lh_1-5
+        line-height: 1.5em
     &_ttu
         text-transform: uppercase
     &_mb_20
@@ -815,10 +924,12 @@ body
     display: block
     transition: all 0.2s ease 0s
     text-decoration: none
+    background-image: linear-gradient( 137deg, rgb(138,202,0) 0%, rgb(130,201,0) 10%, rgb(122,199,0) 24%, rgb(24,169,0) 100%)
+    &__img-box
+        transition: all 0.5s ease 0s
     &__footer
         height: 70px
         margin-top: 2px
-        background-image: -moz-linear-gradient( 137deg, rgb(138,202,0) 0%, rgb(130,201,0) 10%, rgb(122,199,0) 24%, rgb(24,169,0) 100%)
         display: flex
         align-items: center
         justify-content: center
@@ -841,7 +952,8 @@ body
         &:hover
             transform: scale(1.01)
             box-shadow: 8px 8px 8px 0 #ababab
-
+            .project-item__img-box
+                padding: 2px 2px 0 2px
 
 .news-list
     &__item
@@ -1054,7 +1166,7 @@ body
     background-color: #f5f5f5
     box-shadow: 4.822px 9.887px 15.68px 0.32px rgba(0, 0, 0, 0.27)
     &__preview
-        height: 60px
+        height: 50px
         margin-bottom: 25px
     &__title
         margin-bottom: 30px
@@ -1101,11 +1213,11 @@ body
         display: inline-block
         vertical-align: middle
     &__icon
-        width: 120px
-        height: 120px
+        width: 110px
         vertical-align: middle
     &__descr
         margin-bottom: 25px
+        line-height: 1.2em
 
 
 .contacts-box
@@ -1119,15 +1231,11 @@ body
         line-height: 1.2em
         text-decoration: none
         color: inherit
-        &:hover
-            text-decoration: underline
     &__mail
         font-size: 18px
         line-height: 1.2em
         color: $green
         text-decoration: underline
-        &:hover
-            text-decoration: none
 
 
 .object-descr
@@ -1617,6 +1725,65 @@ body
         box-shadow: 0 2px 6px #0c0c0c
 
 
+.popups
+    &__popups-wrapper
+        display: flex
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        overflow: auto
+        align-items: center
+        justify-content: center
+        padding: 0 10px
+    &__popup
+        width: 380px
+        display: none
+        pointer-events: auto
+        &_width_610
+            width: 610px
+
+.form-popup
+    padding: 30px 65px 70px
+    position: relative
+    color: #fff
+    background-color: $dark-blue
+    overflow: hidden
+    &_pt_10
+        padding-top: 10px
+    &__title
+        font-size: 30px
+        text-align: center
+        margin-bottom: 30px
+        line-height: 1.2em
+        text-transform: uppercase
+    &__subtitle
+        text-align: center
+        font-size: 16px
+        line-height: 1.2em
+        margin-bottom: 10px
+    &__top-icon
+        width: 80px
+        height: 20px
+        position: absolute
+        left: 50%
+        margin-left: -40px
+        top: -1px
+        transform: rotate(180deg)
+    &__bottom-icon
+        position: absolute
+        left: 50%
+        bottom: -10px
+        width: 650px
+        height: 130px
+        margin-left: -100px
+    &__phone
+        margin-bottom: 25px
+    &__close
+        position: absolute
+        right: 10px
+        top: 10px
 
 .close
     width: 30px
@@ -1627,12 +1794,12 @@ body
     cursor: pointer
     outline: none
     border: none
-    background-color: inherit
+    background: transparent
     &:before
         content: ''
         width: 100%
         height: 2px
-        left: 0 
+        left: 0
         position: absolute
         top: 50%
         margin-top: -1px
@@ -1647,8 +1814,6 @@ body
     &_green
         &:before, &:after
             background-color: #6fc600
-
-
 
 
 @media screen and (max-width: 1450px)
@@ -1669,7 +1834,6 @@ body
 
     .preview-section 
         height: 550px
-
 
     .main-nav
         display: block
@@ -1707,6 +1871,8 @@ body
             display: none
         &__link-icon
             margin-bottom: 0
+            width: 40px
+            height: 35px
         &__dropmenu
             background-color: #262e35
             position: static
@@ -1782,13 +1948,22 @@ body
     .dropmenu-list_fz18 .dropmenu-list__link
         font-size: 16px
 
+    .product-title
+        font-size: 30px
+        &:before
+            width: 8px
+            height: 8px
+            top: 14px
 
     .section-grid-nav 
         z-index: 200
         position: relative
-        background-color: #e6e6e6
-        padding: 13px 0
         margin-bottom: 10px
+        padding: 0
+        &__title
+            padding: 0 5px
+        .container
+            padding: 0
         &__close
             display: block
         &__grid-nav
@@ -1801,12 +1976,12 @@ body
             background-color: #fff
             box-shadow: 0 5px 5px 0 #ccc
         &__breadcrumbs
-            margin-bottom: 0
-            padding-left: 45px
             position: relative
+            padding: 13px 0 13px 45px
+            background-color: #e6e6e6
         &__hamburger
             position: absolute
-            left: 0
+            left: 5px
             top: 50%
             margin-top: -14px
             display: block
@@ -1865,6 +2040,27 @@ body
 
 
 @media screen and (max-width: 768px)
+    .dropmenu-list__link
+        font-size: 16px
+    .form-popup
+        padding: 30px
+        &__bottom-icon
+            display: none
+
+    .form-popup__title
+        font-size: 22px
+
+    .popups__popups-wrapper
+        display: block
+        overflow: auto
+
+    .popups__popup
+        margin: 30px auto
+        width: 100%
+
+    .owl-carousel .projects-grid__item
+        width: 100%
+
     .grid-nav__item
         width: 100%
         padding: 20px 0 0
@@ -1922,7 +2118,6 @@ body
             line-height: 180px
         &__icon
             width: 100px
-            height: 100px
 
     .news-item
         display: block
@@ -2190,6 +2385,9 @@ body
         width: 1100px
 
 @media screen and (max-width: 500px)
+    .projects-grid__item
+        width: 100%
+
     .project-item__title
         font-size: 14px
 
