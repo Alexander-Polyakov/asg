@@ -1398,14 +1398,14 @@ body
         background-color: $dark-blue
         &:after
             content: ''
-            width: 50px
+            width: 35px
             height: 120%
             position: absolute
-            right: 20px
+            right: 25px
             top: -10%
             border-right: 6px solid #6fc600
             background-color: $dark-blue
-            transform: rotate(10deg)
+            transform: rotate(5deg)
 
 .footer-grid
     display: flex
@@ -1436,7 +1436,7 @@ body
         font-size: 18px
         line-height: 1em
         &:hover
-            text-decoration: underline
+            color: $green
 
 .footer-info
     line-height: 1.5em
@@ -1586,13 +1586,20 @@ body
 .table-section
     &__table
         margin-bottom: 25px
-    &__link
-        font-size: 20px
-        text-decoration: underline
-        display: inline-block
+
+.declaration-conformity-link
+    font-size: 20px
+    text-decoration: none
+    display: inline-block
+    vertical-align: middle
+    color: $dark-blue
+    &__icon
         vertical-align: middle
-        color: $dark-blue
-        &:hover
+        margin-right: 10px
+    &__text
+        text-decoration: underline
+    &:hover
+        .declaration-conformity-link__text
             text-decoration: none
 
 .table
