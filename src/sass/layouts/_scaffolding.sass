@@ -780,6 +780,15 @@ body
     font-family: $ff-rc
     font-weight: 400
     text-indent: 10px
+    ul
+        margin-bottom: 10px
+        list-style: none
+        li
+            &:before
+                content: "-"
+                margin-right: 5px
+        &:last-child
+            margin-bottom: 0
     &_lh_1-5
         line-height: 1.5em
     &_ttu
