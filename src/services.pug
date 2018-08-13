@@ -1,0 +1,70 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Services')
+        include pug/styles.pug
+
+    body
+        .page
+            .page__header
+                include pug/components/header
+
+            main.page__main
+                .st-section.st-section_first
+                    .st-section__breadcrumbs
+                        .container
+                            nav.breadcrumbs
+                                a(href='#').breadcrumbs__item УСЛУГИ
+                                span.breadcrumbs__item Реализованные проекты
+
+                    .container.container_width_1000
+                        .st-section__title
+                            h1.title.title_line-top  УСЛУГИ
+
+                        .projects-grid
+                            .projects-grid__item
+                                a(href='#').service-item
+                                    .service-item__icon-box
+                                        img(src='./images/icons/menu-icon4.svg').service-item__icon
+                                    .service-item__title
+                                        h2.title.title_line-top.title_fz_25.title_center ПРОЕКТИРОВАНИЕ
+                            .projects-grid__item
+                                a(href='#').service-item
+                                    .service-item__icon-box
+                                        img(src='./images/icons/menu-icon2.svg').service-item__icon
+                                    .service-item__title
+                                        h2.title.title_line-top.title_fz_25.title_center ПРОЕКТИРОВАНИЕ
+                            .projects-grid__item
+                                a(href='#').service-item
+                                    .service-item__icon-box
+                                        img(src='./images/icons/menu-icon3.svg').service-item__icon
+                                    .service-item__title
+                                        h2.title.title_line-top.title_fz_25.title_center СТРОИТЕЛЬСТВО И МОНТАЖ
+                            .projects-grid__item
+                                a(href='#').service-item
+                                    .service-item__icon-box
+                                        img(src='./images/icons/menu-icon8.svg').service-item__icon
+                                    .service-item__title
+                                        h2.title.title_line-top.title_fz_25.title_center ПРОЕКТИРОВАНИЕ
+                            .projects-grid__item
+                                a(href='#').service-item
+                                    .service-item__icon-box
+                                        img(src='./images/icons/menu-icon4.svg').service-item__icon
+                                    .service-item__title
+                                        h2.title.title_line-top.title_fz_25.title_center ПРОЕКТИРОВАНИЕ
+
+
+
+
+
+
+            include pug/components/footer
+
+
+        include pug/scripts.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+        script(src='js/ymap.js')
